@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266 170" width="266" height="170">
+	<defs>
+		<image width="76" height="50" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NiA1MCIgd2lkdGg9Ijc2IiBoZWlnaHQ9IjUwIj4KCTxkZWZzPgoJCTxjbGlwUGF0aCBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgaWQ9ImNwMSI+CgkJCTxwYXRoIGQ9Ik0wIDBMNzYgMEw3NiA1MEwwIDUwWiIgLz4KCQk8L2NsaXBQYXRoPgoJPC9kZWZzPgoJPHN0eWxlPgoJCXRzcGFuIHsgd2hpdGUtc3BhY2U6cHJlIH0KCQkuc2hwMCB7IGZpbGw6ICNmZmZmZmYgfSAKCTwvc3R5bGU+Cgk8ZyBpZD0iUGFnZSAxIiBjbGlwLXBhdGg9InVybCgjY3AxKSI+CgkJPHBhdGggaWQ9IlBhdGggMSIgY2xhc3M9InNocDAiIGQ9Ik02Ni44MiAwLjFMNTguNzkgMjUuMzdMNjMuNDUgMzkuNzJMNzYuMDQgMC4xTDY2LjgyIDAuMVpNMzMuMjkgMC4xTDIwLjg0IDM2LjY2TDkuMjIgMC4xTDAgMC4xTDE1Ljg1IDUwTDI1LjU4IDUwTDM4LjA0IDEzLjQxTDUwLjQ2IDUwTDU5LjExIDUwTDQ4LjM3IDE2Ljk0TDQ4LjUgMTYuOUw0Mi44IDAuMUwzMy4yOSAwLjFaIiAvPgoJPC9nPgo8L3N2Zz4="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="NEWS">
+		<g id="Group 1">
+			<g id="Group 4">
+				<use id="Vector Smart Object" href="#img1" transform="matrix(6.997,0,0,6.813,0,0)"/>
+			</g>
+		</g>
+	</g>
+</svg>
