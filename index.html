@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type = "text/css" href="normalize.css"/>
     <link rel="stylesheet" type = "text/css" href="styles.css"/>
     <title>World Trade Ventures</title>
@@ -22,16 +24,18 @@
     </nav>
     <header>
         <div class="header-left">
-            <div>
+            <div class="site-icon-wraper">
                 <img src="./images/logos/site-icon.svg" alt="World Trade Ventures icon">
                 <span class="section-number">01</span>
             </div>
-            <div>
+            <div class="social">
                 <span class="comp-name">world trade ventures</span>
-                <a class="social-link" href=""><img src="images/icons/instagram.svg"/></a>
-                <a class="social-link" href=""><img src="images//icons/twitter.svg"/></a>
-                <a class="social-link" href=""><img src="images//icons/behance.svg"/></a>
-                <a class="social-link" href=""><img src="images//icons/faceboook.svg"/></a>
+                <div class="social-wraper">
+                    <a class="social-link" href=""><img src="images/icons/instagram.svg"/></a>
+                    <a class="social-link" href=""><img src="images/icons/twitter.svg"/></a>
+                    <a class="social-link" href=""><img src="images/icons/behance.svg"/></a>
+                    <a class="social-link" href=""><img src="images/icons/faceboook.svg"/></a> 
+                </div>
             </div>
 
         </div>
@@ -39,11 +43,33 @@
             <div class="glide">
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
-                    <li class="glide__slide">0</li>
-                    <li class="glide__slide">1</li>
-                    <li class="glide__slide">2</li>
+                    <li class="glide__slide slide-1">
+                            <div class="slide-action">
+                                <img src="images/logos/site-logo-negative.svg"/>
+                                <h1>INVESTING IN PEOPLE</h1>
+                                <a href="#">LOOK MORE</a>
+                            </div>
+                    </li>
+                    <li class="glide__slide slide-1">
+                        <div class="slide-action">
+                            <img src="images/logos/site-logo-negative.svg"/>
+                            <h1>INVESTING IN PsPLE</h1>
+                            <a href="#">L MORE</a>
+                        </div>
+                </li>
+                <li class="glide__slide slide-1">
+                    <div class="slide-action">
+                        <img src="images/logos/site-logo-negative.svg"/>
+                        <h1>INVESTING IN PsPLE</h1>
+                        <a href="#">LOO</a>
+                    </div>
+            </li>
                   </ul>
                 </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">next</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">prev</button>
+                  </div>
               </div>
         </div>
     </header>
@@ -110,8 +136,10 @@
         <div class="news-wraper">
             
             <div class="news-item xl light">
-                <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN..</h4>
-                <p>For thr third time since December 2017, we at App Growth Awards...</p>
+                <div class="item-content">
+                    <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN</h4>
+                    <p>For thr third time since December 2017, we at App Growth Awards</p>
+                </div>
                 <div class="item-info">
                     <span>4 April 2019</span>
                     <span>CINCH TECHNOLOGIES</span>
@@ -119,108 +147,142 @@
             </div>
 
             <div class="news-item md dark">
-                <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN..</h4>
-                <p>For thr third time since December 2017, we at App Growth Awards...</p>
+                <div class="item-content">
+                    <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN</h4>
+                    <p>For thr third time since December 2017, we at App Growth Awards</p>
+                </div>
                 <div class="item-info">
                     <span>4 April 2019</span>
-                    <span>CINCH TECHNOLOGIES</span>
+                    <span>Aquant</span>
                 </div>
             </div>
 
-            <div class="news-item xs dark">pic</div>
+            <div class="news-item md dark"><img src="images/37.png"></div>
 
             <div class="news-item md light">
-                <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN..</h4>
-                <p>For thr third time since December 2017, we at App Growth Awards...</p>
+                <div class="item-content">
+                    <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN</h4>
+                    <p>For thr third time since December 2017, we at App Growth Awards.</p>
+                </div>
                 <div class="item-info">
                     <span>4 April 2019</span>
-                    <span>CINCH TECHNOLOGIES</span>
+                    <span>Rentigo</span>
                 </div>
             </div>
 
 
 
-            <div class="news-item sm dark">
-                <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN..</h4>
-                <p>For thr third time since December 2017, we at App Growth Awards...</p>
+            <div class="news-item md dark">
+                <img src="images/39.png" class="item-background">
+                <div class="item-content">
+                    <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN</h4>
+                    <p>For thr third time since December 2017, we at App Growth Awards.</p>
+                </div>
                 <div class="item-info">
                     <span>4 April 2019</span>
-                    <span>CINCH TECHNOLOGIES</span>
+                    <span>ML Matic</span>
                 </div>
             </div>
 
             <div class="news-item md light">
-                <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN..</h4>
-                <p>For thr third time since December 2017, we at App Growth Awards...</p>
+                <div class="item-content">
+                    <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN</h4>
+                    <p>For thr third time since December 2017, we at App Growth Awards</p>
+                </div>
                 <div class="item-info">
                     <span>4 April 2019</span>
-                    <span>CINCH TECHNOLOGIES</span>
+                    <span>HYPR</span>
                 </div>
             </div>
-
-            <div class="news-item large light">
-                <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN..</h4>
-                <p>For thr third time since December 2017, we at App Growth Awards...</p>
-                <div class="item-info">
-                    <span>4 April 2019</span>
-                    <span>CINCH TECHNOLOGIES</span>
-                </div>
-            </div>
-
-            <div class="news-item md dark">pic</div>
-
-
 
             <div class="news-item xl light">
-                <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN..</h4>
-                <p>For thr third time since December 2017, we at App Growth Awards...</p>
+                <div class="item-content">
+                    <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN</h4>
+                    <p>For thr third time since December 2017, we at App Growth Awards</p>
+                </div>
                 <div class="item-info">
                     <span>4 April 2019</span>
                     <span>CINCH TECHNOLOGIES</span>
                 </div>
             </div>
 
-            <div class="news-item md dark">logo</div>
+            <div class="news-item md dark"><img src="images/38.png"></div>
+
+
 
             <div class="news-item xxl light">
-                <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN..</h4>
-                <p>For thr third time since December 2017, we at App Growth Awards...</p>
+                <div class="item-content">
+                    <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN</h4>
+                    <p>For thr third time since December 2017, we at App Growth Awards</p>
+                </div>
                 <div class="item-info">
                     <span>4 April 2019</span>
-                    <span>CINCH TECHNOLOGIES</span>
+                    <span>Semperis</span>
+                </div>
+            </div>
+
+            <div class="news-item md dark"><img src="images/40.png"></div> 
+
+            <div class="news-item xxl light">
+                <div class="item-content">
+                    <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN</h4>
+                    <p>For thr third time since December 2017, we at App Growth Awards</p>
+                </div>
+                <div class="item-info">
+                    <span>4 April 2019</span>
+                    <span>Visit.org</span>
                 </div>
             </div>
 
 
 
-            <div class="news-item sm light">pic</div>
+            <div class="news-item md light"><img src="images/42.png"></div>
 
             <div class="news-item md light">
-                <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN..</h4>
-                <p>For thr third time since December 2017, we at App Growth Awards...</p>
+                <div class="item-content">
+                    <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN</h4>
+                    <p>For thr third time since December 2017, we at App Growth Awards</p>
+                </div>
                 <div class="item-info">
                     <span>4 April 2019</span>
-                    <span>CINCH TECHNOLOGIES</span>
+                    <span>ROX</span>
                 </div>
             </div>
 
-            <div class="news-item large dark">
-                <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN..</h4>
-                <p>For thr third time since December 2017, we at App Growth Awards...</p>
+            <div class="news-item xl dark">
+                <div class="item-content">
+                    <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN</h4>
+                    <p>For thr third time since December 2017, we at App Growth Awards</p>
+                </div>
                 <div class="item-info">
                     <span>4 April 2019</span>
-                    <span>CINCH TECHNOLOGIES</span>
+                    <span>Life Beam</span>
                 </div>
             </div>
 
-            <div class="news-item md dark">pic</div>
+            <div class="news-item md dark"><img src="images/37.png"></div>
 
-            <div class="new-item blog">
-                <h3>Silvertech blog</h3>
-                <p> For the third time since December 2017, we at App Growth Awards ... </p>
+            <div class="news-item blog">
+                <img src="images/43.png" class="item-background">
+                <div class="item-content">
+                    <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN</h4>
+                    <p>For thr third time since December 2017, we at App Growth Awards</p>
+                </div>
                 <div class="item-info">
                     <span>4 April 2019</span>
-                    <span>CINCH TECHNOLOGIES</span>
+                    <span>Sqream</span>
+                </div>
+
+            </div>
+            <div class="news-item blog">
+                <img src="images/44.png" class="item-background">
+                <div class="item-content">
+                    <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN</h4>
+                    <p>For thr third time since December 2017, we at App Growth Awards</p>
+                </div>
+                <div class="item-info">
+                    <span>4 April 2019</span>
+                    <span>Sqream</span>
                 </div>
 
             </div>
@@ -260,4 +322,12 @@
     </footer>
 
 </body>
+
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+<script>
+  new Glide('.glide').mount({})
+</script>
+
+
 </html>

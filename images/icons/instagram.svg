@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" width="21" height="21">
 	<style>
 		tspan { white-space:pre }
-		.shp0 { fill: #ffb370 } 
+		.shp0 { fill: #00000 } 
 	</style>
 	<g id="hero image">
 		<g id="left bar">
