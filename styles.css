@@ -69,8 +69,9 @@ span.comp-name {
 footer {
     height: 72vh;
     background: var(--trade-dark);
-    padding: 24vh 0;
+    padding: 24vh 385px;
     box-sizing: border-box;
+    width: 100%;
 }
 
 footer .section-title{
@@ -181,7 +182,6 @@ nav a {
 }
 
 .slide-action img {
-    /* height: 200px; */
     width: 70%;
 }
 
@@ -445,22 +445,15 @@ p.info {
     display: inline;
     color: white;
     font-size: 1em;
-    width: 15vw;
-    margin-right: 6vw;
 }
 
 .footer-content {
     display: flex;
-    align-items: center;
-    margin: auto;
-    width: max-content;
+    justify-content: space-between;
 }
 
 form {
-    /* width: 33vw; */
-    display: flex;
-    align-items: center;
-    /* justify-content: left; */
+    text-align: right;
 }
 
 label {display: none;}
@@ -481,17 +474,21 @@ textarea {
 }
 
 input[type="submit"] {
-    position: relative;
-    top: 105px;
-    right: 200px;
+    /* bottom: 0; */
+    /* right: 200px; */
+    /* align-self: flex-end; */
+    /* position: relative; */
+    /* left: 0; */
+    margin-top: 20px;
 }
 
 .credit {
-    position: relative;bottom: -170px;
+    position: relative;
+    bottom: -170px;
     background: white;
     width: 100%;
     display: flex;
-    padding: 0 14vw;
+    /* padding: 0 14vw; */
     box-sizing: border-box;
     justify-content: space-between;
     }
@@ -502,10 +499,15 @@ input[type="submit"] {
     width: 11vw;
 }
 
-.fields {
+.input-fields {
     display: flex;
-    width: 405px;
+    width: 404px;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-right: 5px;
+}
+
+.fields {
+    width: 762px;
+    display: flex;
 }
