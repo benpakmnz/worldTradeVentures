@@ -15,16 +15,18 @@ header{
 
 span.comp-name {
     transform: rotate(-90deg);
-    letter-spacing: 3.2em;
-    font-size: 0.2em;
+    letter-spacing: 1vh;
+    font-size: 1vh;
     font-weight: 800;
     display: inline-block;
     width: max-content;
 }
 
 .section-number {
-    font-size: 4em;
+    font-size: 4vw;
     font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
 }
 
 .section-title{
@@ -32,7 +34,7 @@ span.comp-name {
     letter-spacing: 8px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
-    margin: 120px 0 70px;
+    margin: 0 0 70px;
 }
 
 .trade-green{
@@ -59,13 +61,16 @@ span.comp-name {
 
 .section-item {
     width: 25%;
+    max-width: 390px;
     margin: 0 32px;
 }
 
 
 footer {
-    height: 788px;
+    height: 72vh;
     background: var(--trade-dark);
+    padding: 24vh 0;
+    box-sizing: border-box;
 }
 
 footer .section-title{
@@ -73,15 +78,16 @@ footer .section-title{
 }
 
 .header-left {
-    width: 10vw;
+    width: 8vw;
     z-index: 50;
     background-color: #f5f5f3;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .header-right {
-    width: calc(100% - 10vw);
+    width: calc(100% - 8vw);
 }
 
 nav {
@@ -108,8 +114,8 @@ nav ul {
 header::before{
     content: '';
     display: block;
-    width: 18vw;
-    height: 17vw;
+    width: 19.532vw;
+    height: 42.69vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -158,10 +164,13 @@ nav a:hover, nav a:focus {
     padding-bottom: 2px;
 }
 nav a {
+    font-family: 'Oswald', sans-serif;
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
 }
 
 .slide-action h1 {
@@ -177,10 +186,10 @@ nav a {
 }
 
 
-.slide-action a:hover {
+.slide-action a:hover, input[type="submit"]:hover {
     background-color: #60ffee;
 }
-.slide-action a {
+.slide-action a, input[type="submit"] {
     text-decoration: none;
     color: white;
     padding: 20px;
@@ -194,7 +203,7 @@ nav a {
     font-size: 14px;
 }
 
-.slide-action a:after {
+.slide-action a:after, input[type="submit"]:after {
     content: '';
     width: 10px;
     height: 10px;
@@ -210,35 +219,36 @@ nav a {
     display: flex;
     position: relative;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    top: 83px;
-    align-self: center;
+    align-self: flex-end;
+    height: calc(100vh - 50%);
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 30px;
 }
 
 .site-icon-wraper{
     align-self: flex-end;
     text-align: right;
-    margin-top: 30px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
-    height: 30%;
+    height: 21%;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    left: 1.5vw;
 }
 
 .site-icon-wraper img {
-    width: 66%;
+    width: 4vw;
 }
 
-
-
 .social-wraper{
-    align-self: center;
-    position: relative;
-    /* top: 250px; */
     display: flex;
     flex-direction: column;
-    height: 40vh;
+    height: 20vh;
     justify-content: space-between;
 }
 
@@ -247,7 +257,7 @@ button.glide__arrow {
     background: none;
     color: white;
     border: 0;
-    font-size: 16px;
+    font-size: 13px;
     font-family: 'Oswald', sans-serif;
     font-weight: lighter;
     letter-spacing: 7px;
@@ -256,9 +266,9 @@ button.glide__arrow {
 
 
 .glide__arrows {
-    position: relative;
-    top: 270px;
-    left: 0px;
+    position: absolute;
+    top: 48vh;
+    left: 10vw;
 }
 
 .glide__arrow{
@@ -277,10 +287,10 @@ button.glide__arrow {
     background-position: center;
 }
 .glide__arrow--left{
-    left: 1em;
+    left: 0;
 }
 .glide__arrow--right{
-    right: 20px;
+    right: 2vw;
 }
 .glide__arrow--right:before {
     content: '';
@@ -303,19 +313,25 @@ button.glide__arrow {
     position: absolute;
     bottom: 20px;
     display: flex;
-    width: calc(100% - 80px);
+    width: calc(100% - 3vw);
     box-sizing: border-box;
     justify-content: space-between;
 }
 
 .news-item p {
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 1vw;
+    font-weight: 600;
+    width: 95%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .news-item h4 {
     text-transform: uppercase;
-    font-size: 31px;
+    font-size: 1.5vw;
     font-family: 'Oswald', sans-serif;
     margin: 0;
     width: 90%;
@@ -330,8 +346,8 @@ button.glide__arrow {
     background-color: #f1efef;
 }
 .news-item {
-    height: 300px;
-    padding: 40px;
+    height: 30vh;
+    padding: 1.5vw;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -392,4 +408,104 @@ button.glide__arrow {
 
 .blog {
     width: 49.15%;
+}
+
+
+.social-wraper:before {
+    content: '';
+    border-right: 1px solid #C5C4C2;
+    position: absolute;
+    top: 35%;
+    width: 1px;
+    height: 15%;
+    right: 50%;
+}
+
+#about h3:after {
+    content: '.';
+    color: var(--trade-green);
+    display: inline;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+p {
+    line-height: normal;
+}
+
+section {
+    margin-bottom: 150px;
+}
+
+section:first-of-type {
+    margin-top: 150px;
+}
+
+p.info {
+    display: inline;
+    color: white;
+    font-size: 1em;
+    width: 15vw;
+    margin-right: 6vw;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: max-content;
+}
+
+form {
+    /* width: 33vw; */
+    display: flex;
+    align-items: center;
+    /* justify-content: left; */
+}
+
+label {display: none;}
+
+input, textarea {
+    height: 52px;
+    width: 200px;
+    border-radius: 10px;
+    border: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 5px 0 0;
+}
+
+textarea {
+    height: 107px;
+    width: 352px;
+}
+
+input[type="submit"] {
+    position: relative;
+    top: 105px;
+    right: 200px;
+}
+
+.credit {
+    position: relative;bottom: -170px;
+    background: white;
+    width: 100%;
+    display: flex;
+    padding: 0 14vw;
+    box-sizing: border-box;
+    justify-content: space-between;
+    }
+
+.credit img {
+    position: relative;
+    top: -29px;
+    width: 11vw;
+}
+
+.fields {
+    display: flex;
+    width: 405px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 5px;
 }
