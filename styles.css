@@ -434,11 +434,11 @@ p {
 }
 
 section {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 section:first-of-type {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 p.info {
@@ -474,11 +474,6 @@ textarea {
 }
 
 input[type="submit"] {
-    /* bottom: 0; */
-    /* right: 200px; */
-    /* align-self: flex-end; */
-    /* position: relative; */
-    /* left: 0; */
     margin-top: 20px;
 }
 
@@ -488,7 +483,6 @@ input[type="submit"] {
     background: white;
     width: 100%;
     display: flex;
-    /* padding: 0 14vw; */
     box-sizing: border-box;
     justify-content: space-between;
     }
@@ -510,4 +504,82 @@ input[type="submit"] {
 .fields {
     width: 762px;
     display: flex;
+}
+
+
+.companies-desc {
+    background-color: var(--trade-dark);
+    padding: 70px 200px;
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.companies-desc button {
+    background: initial;
+    border: 0;
+    height: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.companies-desc button img {
+    max-width: 130px;
+    max-height: 40px;
+    vertical-align: middle;
+}
+
+
+.companie-item {
+    width: 25vw;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background-color: #1D2434;
+    flex-shrink: 0;
+}
+
+img.companie-pic {
+    width: 100%;
+    opacity: 0.3;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+#owl-demo .item{
+    background: #42bdc2;
+    padding: 30px 0px;
+    margin: 10px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+.companies-slider {
+    display: flex;
+    align-items: baseline;
+    height: 80vh;
+    overflow: hidden;
+}
+
+img.companie-logo {
+    position: absolute;
+    top: 45px;
+    z-index: 100;
+    right: 0;
+    width: 40%;
+    margin: auto;
+    left: 0;
+}
+
+.companie-item:hover .companie-pic {
+    opacity: 1;
 }
