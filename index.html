@@ -112,36 +112,41 @@
 
     <section id="portfolio">
         <h2 class="section-title">PORTFOLIO</h2>
-        <div class="companies-slider">
-            <div class="companie-item">
-                <img class="companie-logo" src="images/logos/semperis.png"/>
-                <img class="companie-pic" src="images/semperis.png"/>
+        <div id="glide-portfolio">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                    <div class="companie-item">
+                        <img class="companie-logo" src="images/logos/semperis.png"/>
+                        <img class="companie-pic" src="images/semperis.png"/>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="companie-item">
+                        <img class="companie-logo" src="images/logos/aquant.png"/>
+                        <img class="companie-pic" src="images/aquant.png"/>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="companie-item">
+                        <img class="companie-logo" src="images/logos/firedome.png"/>
+                        <img class="companie-pic" src="images/firedome.png"/>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                    <div class="companie-item">
+                        <img class="companie-logo" src="images/logos/semperis.png"/>
+                        <img class="companie-pic" src="images/semperis.png"/>
+                    </div>
+                </li>
+              </ul>
             </div>
-            <div class="companie-item">
-                <img class="companie-logo" src="images/logos/aquant.png"/>
-                <img class="companie-pic" src="images/aquant.png"/>
-            </div>
-            <div class="companie-item">
-                <img class="companie-logo" src="images/logos/sqream.png"/>
-                <img class="companie-pic" src="images/sqream.png"/>
-            </div>
-            <div class="companie-item">
-                <img class="companie-logo" src="images/logos/firedome.png"/>
-                <img class="companie-pic" src="images/firedome.png"/>
-            </div>
-            <div class="companie-item">
-                <img class="companie-logo" src="images/logos/aquant.png"/>
-                <img class="companie-pic" src="images/aquant.png"/>
-            </div>
-            <div class="companie-item">
-                <img class="companie-logo" src="images/logos/sqream.png"/>
-                <img class="companie-pic" src="images/sqream.png"/>
-            </div>
-            <div class="companie-item">
-                <img class="companie-logo" src="images/logos/firedome.png"/>
-                <img class="companie-pic" src="images/firedome.png"/>
-            </div>
-        </div>
+            <div class="glide__arrows portfolio_arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">next</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">prev</button>
+              </div>
+          </div>
+          
         <div class="companies-desc">
             <button><img src="images/logos/shade.png"/></button>
             <button><img src="images/logos/rentigo.png"/></button>
@@ -359,10 +364,24 @@
 
 <script>
   new Glide('.glide').mount({})
+  new Glide('#glide-portfolio', {
+  type: 'carousel',
+  perView: 4,
+  gap: 0
+}).mount()
 
   
 $(document).ready(  function(){
 })
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+
 
 
 </script>

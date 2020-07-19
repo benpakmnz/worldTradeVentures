@@ -34,7 +34,8 @@ span.comp-name {
     letter-spacing: 8px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
-    margin: 0 0 70px;
+    margin: 50px 0 70px;
+    scroll-margin: 50px 0 0 50px;
 }
 
 .trade-green{
@@ -286,9 +287,7 @@ button.glide__arrow {
     background-size: contain;
     background-position: center;
 }
-.glide__arrow--left{
-    left: 0;
-}
+
 .glide__arrow--right{
     right: 2vw;
 }
@@ -434,11 +433,13 @@ p {
 }
 
 section {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    /* margin-top: 66px; */
+    padding-top: 50px;
 }
 
 section:first-of-type {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 p.info {
@@ -509,7 +510,7 @@ input[type="submit"] {
 
 .companies-desc {
     background-color: var(--trade-dark);
-    padding: 70px 200px;
+    padding: 70px 440px;
     display: flex;
     height: 200px;
     flex-direction: row;
@@ -525,6 +526,7 @@ input[type="submit"] {
     height: 50px;
     padding: 5px;
     box-sizing: border-box;
+    margin: 0 10px;
 }
 
 .companies-desc button img {
@@ -582,4 +584,24 @@ img.companie-logo {
 
 .companie-item:hover .companie-pic {
     opacity: 1;
+}
+
+.glide__arrows.portfolio_arrows {
+    position: relative;
+    top: 0;
+    left: auto;
+}
+
+.portfolio_arrows .glide__arrow--left {
+    left: 2em;
+}
+
+
+.tooltip span {
+    display:none;
+}
+.tooltip:hover span {
+    display:block;
+    position:fixed;
+    overflow:hidden;
 }
