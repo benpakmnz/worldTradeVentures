@@ -1,13 +1,17 @@
 <?php
 $field_name = $_POST['cf_name'];
-$field_email = $_POST['cf_email'];
+$field_position = $_POST['cf_position'];
+$field_company = $_POST['cf_company'];
+$field_website = $_POST['cf_website'];
 $field_message = $_POST['cf_message'];
 
 $mail_to = 'benpakmnz@gmail.com.com';
 $subject = 'Message from a site visitor '.$field_name;
 
 $body_message = 'From: '.$field_name."\n";
-$body_message .= 'E-mail: '.$field_email."\n";
+$body_message .= 'position: '.$field_position."\n";
+$body_message .= 'company: '.$field_company."\n";
+$body_message .= 'website: '.$field_website."\n";
 $body_message .= 'Message: '.$field_message;
 
 $headers = 'From: '.$field_email."\r\n";

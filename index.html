@@ -410,21 +410,34 @@
                 New York, NY 10007 (212) 739-9260
             </p>
             <form action="contact.php" method="post">
-                Your name<br>
-                <input type="text" name="cf_name"><br>
-                Your e-mail<br>
-                <input type="text" name="cf_email"><br>
-                Message<br>
-                <textarea name="cf_message"><br>
-                <input type="submit" value="Send">
+                <div class="fields">
+                    <div class="input-fields">
+                        <label for="name">name</label>
+                        <input id="name" name="cf_name" type="text" placeholder="Name">
+            
+                        <label for="position">position</label>
+                        <input id="position" name="cf_position" type="text" placeholder="What you do">
+        
+                        <label for="company">company</label>
+                        <input id="company" name="cf_company" type="text" placeholder="Company Name">
+            
+                        <label for="web">website</label>
+                        <input id="web" name="cf_website" type="text" placeholder="Website link">
+                    </div>
+        
+                        <label for="massage">massage</label>
+                        <textarea id="massage" name="cf_massage" type="text" placeholder="Massage"></textarea>
+                </div>   
+                    <input type="submit" value="SEND">
             </form>
         </div>
        
         <div class="credit">
             <img src="images/logos/site-logo.png"/>
             <span>© bardana 2020. All Rights Reserved.</span>
-            <a href='./contacus.html'>contact</a>
         </div>
+        
+
     </footer>
 </body>
 
