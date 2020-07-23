@@ -443,21 +443,15 @@
 <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 
 <script>
-    console.log('benny')
-  new Glide('.glide').mount({})
-  new Glide('#glide-portfolio', {
-  type: 'carousel',
-  perView: 4,
-  gap: 0
-}).mount()
-
-  
-$(document).ready(  function(){
-})
+//   new Glide('.glide').mount({})
+//   new Glide('#glide-portfolio', {
+//   type: 'carousel',
+//   perView: 4,
+//   gap: 0
+// }).mount()
 
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
-
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
