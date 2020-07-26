@@ -73,11 +73,8 @@ span.comp-name {
 
 
 footer {
-    height: 72vh;
     background: var(--trade-dark);
-    padding: 24vh 385px;
-    box-sizing: border-box;
-    width: 100%;
+    padding-top: 80px;
 }
 
 footer .section-title{
@@ -456,11 +453,16 @@ p.info {
     display: inline;
     color: white;
     font-size: 1em;
+    line-height: 2em;
+    margin: 0;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
+    width: 80%;
+    max-width: 1170px;
+    margin: 0 auto 50px;
 }
 
 form {
@@ -490,18 +492,22 @@ input[type="submit"] {
 
 .credit {
     position: relative;
-    bottom: -170px;
     background: white;
-    width: 100%;
+    width: 80%;
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+    margin: auto;
+    top: 82px;
+    font-size: 12px;
     }
 
 .credit img {
     position: relative;
-    top: -29px;
-    width: 11vw;
+    top: -30px;
+    width: 212px;
 }
 
 .input-fields {
@@ -520,15 +526,8 @@ input[type="submit"] {
 
 .companies-desc {
     background-color: var(--trade-dark);
-    padding: 70px 440px;
-    display: flex;
-    height: 200px;
-    flex-direction: row;
-    margin: auto;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
     position: relative;
+    padding: 91px 0;
 }
 
 .companies-desc a {
@@ -540,7 +539,7 @@ input[type="submit"] {
     margin: 0 10px;
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
+    /* border-bottom: 1px dotted black; */
 }
   
   a .tooltiptext {
@@ -551,8 +550,8 @@ input[type="submit"] {
     position: absolute;
     z-index: 1;
     bottom: 70px;
-    left: 45%;
-    margin-left: -60px;
+    /* left: 0px; */
+    /* margin-left: -245px; */
     opacity: 0;
     transition: opacity 0.3s;
     /* height: 160px; */
@@ -563,6 +562,7 @@ input[type="submit"] {
     display: inline-block;
     vertical-align: middle;
     padding: 20px;
+    right: -114px;
   }
   
   a .tooltiptext::after {
@@ -584,7 +584,7 @@ input[type="submit"] {
 
 
 .companies-desc a img {
-    max-width: 130px;
+    max-width: 165px;
     max-height: 40px;
     vertical-align: middle;
 }
@@ -604,7 +604,7 @@ img.companie-pic {
     width: 100%;
     opacity: 0.3;
     object-fit: cover;
-    height: 100%;
+    /* height: 100%; */
 }
 
 
@@ -673,7 +673,7 @@ a .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
-    left: 10%;
+    left: 50%;
     border-width: 20px;
     border-style: solid;
     border-color: #4bdece transparent transparent transparent;
@@ -695,21 +695,21 @@ a .tooltiptext::after {
   }
 
 section#about::before {
-    content: 'ABOUT';
+    content: 'about';
     left: 48px;
     top: 124px;
 }
 
 section#portfolio::before {
     content: 'PORTFOLIO';
-    right: 34vw;
+    /* right: 34vw; */
     top: 82px;
 }
 
 section::before, footer h2::before {
     position: absolute;
     font-size: 134px;
-    width: 200px;
+    /* width: 200px; */
     height: 100px;
     color: black;
     font-weight: 800;
@@ -722,7 +722,7 @@ footer h2::before {
     color: white;
     font-family: 'Montserrat', sans-serif;
     top: -66px;
-    right: 333px;
+    right: 240px;
 }
 
 section#about:after {
@@ -759,4 +759,28 @@ section:after, .companies-desc:after {
         right: 60px;
         top: 30px;
         color:white;
+}
+
+.companies-desc ul {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    max-width: 1230px;
+    padding: 0;
+}
+
+.companies-desc ul li {
+    list-style: none;
+}
+
+
+.input-fields input:focus, textarea:focus, input[type="submit"]:focus {
+    outline: 0;
+    opacity: 0.85;
 }
