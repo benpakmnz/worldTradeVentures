@@ -406,8 +406,6 @@ section {
     
             }
         }
-    
-    
     }
 
     .companie-item {
@@ -415,6 +413,7 @@ section {
         height: 100%;
         overflow: hidden;
         position: relative;
+        display: inline-block;
         text-align: center;
         background-color: #1D2434;
         flex-shrink: 0;

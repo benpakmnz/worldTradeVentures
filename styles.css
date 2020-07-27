@@ -451,6 +451,7 @@ section .section-item {
   height: 100%;
   overflow: hidden;
   position: relative;
+  display: inline-block;
   text-align: center;
   background-color: #1D2434;
   -ms-flex-negative: 0;
