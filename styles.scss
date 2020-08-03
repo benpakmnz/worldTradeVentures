@@ -459,27 +459,43 @@ section {
             margin: 5px;
             justify-content: space-between;
             position: relative;
-        
-            p {
-                font-size: 1vw;
-                width: 95%;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-        
-            h4 {
-                text-transform: uppercase;
-                font-size: 1.5vw;
-                font-family: 'Oswald', sans-serif;
-                margin: 0;
-                width: 90%;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                font-weight: 500;
-            }
+            color: inherit;
+            text-decoration: none;
 
+            img {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+            } 
+            
+            .item-content{
+                position: relative;
+
+                p {
+                    font-size: 1vw;
+                    width: 95%;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            
+                h4 {
+                    text-transform: uppercase;
+                    font-size: 1.5vw;
+                    font-family: 'Oswald', sans-serif;
+                    margin: 0;
+                    width: 90%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-weight: 500;
+                }
+            }
+        
             .item-info {
                 font-size: 12px;
                 font-weight: bold;
@@ -508,7 +524,7 @@ section {
         .light {
             background-color: #f1efef;
         }
-        
+                
         .xs {
             width: 300px;
         }
@@ -524,22 +540,7 @@ section {
         .xxl {
             width: 38.6%;
         }
-        
-        .news-item{
-            img {
-                height: 100%;
-                width: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                object-fit: cover;
-            } 
-            
-            .item-content{
-                position: relative;
-            }
-        }
-    
+          
         .blog {
             width: 49.15%;
             color: white;
