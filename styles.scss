@@ -289,7 +289,7 @@ section {
 
     #glide-portfolio{
         .glide__slide {
-            height: 83vh;
+            height: 75vh;
         }
     } 
 
@@ -362,19 +362,9 @@ section {
                         display: inline-block;
                         vertical-align: middle;
                         padding: 20px;
-                        right: -114px;
-                    
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            top: 100%;
-                            left: 50%;
-                            margin-left: -5px;
-                            border-width: 5px;
-                            border-style: solid;
-                            border-color: #555 transparent transparent transparent;
-                          }
-                    
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                                      
                             h3 {
                                 font-size: 30px;
                                 font-weight: 800;
@@ -388,11 +378,33 @@ section {
                                 content: "";
                                 position: absolute;
                                 top: 100%;
-                                left: 50%;
                                 border-width: 20px;
                                 border-style: solid;
                                 border-color: #4bdece transparent transparent transparent;
+                                left: 50%;
+                                transform: translate(-50%, 0);
+                            }
+
+                            &.right{
+                              right: 0;
+                              left: initial;
+                              transform:translate(0, 0);
+
+                              &::after {
+                                left: initial;
+                                right: -10px;
+                            }
+
+                            }
+                            &.left{
+                                left: 0;
+                                transform:translate(0, 0);
+  
+                                &::after {
+                                  left: 80px;
                               }
+                            }
+
                         
                     }
     
@@ -409,6 +421,7 @@ section {
     }
 
     .companie-item {
+
         width: 25vw;
         height: 100%;
         overflow: hidden;
@@ -420,6 +433,7 @@ section {
         
         .companie-pic {
             width: 100%;
+            height: 100%;
             opacity: 0.3;
             object-fit: cover;
         }
@@ -490,9 +504,12 @@ section {
                     font-family: 'Oswald', sans-serif;
                     margin: 0;
                     width: 90%;
+                    font-weight: 500;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    display: -webkit-box;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    font-weight: 500;
                 }
             }
         
