@@ -321,7 +321,11 @@ section .section-item {
 
 #portfolio::before {
   content: 'PORTFOLIO';
-  top: 82px;
+  top: 65px;
+  right: 0;
+  overflow: hidden;
+  display: inline-block;
+  width: 655px;
 }
 
 #portfolio #glide-portfolio .glide__slide {
@@ -364,7 +368,6 @@ section .section-item {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  width: 80%;
   max-width: 1230px;
   padding: 0;
 }
@@ -730,6 +733,30 @@ footer h2::before {
   font-family: 'Montserrat', sans-serif;
   top: -66px;
   right: 240px;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
 }
 
 .glide {

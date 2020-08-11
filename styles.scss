@@ -284,7 +284,11 @@ section {
 #portfolio{
     &::before {
         content: 'PORTFOLIO';
-        top: 82px;
+        top: 65px;
+        right: 0;
+        overflow: hidden;
+        display: inline-block;
+        width: 655px;
     }
 
     #glide-portfolio{
@@ -324,7 +328,6 @@ section {
             align-items: center;
             justify-content: space-between;
             position: relative;
-            width: 80%;
             max-width: 1230px;
             padding: 0;
     
@@ -661,6 +664,30 @@ footer {
 
 
 }
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
 
 .glide {
     height: 100vh;
