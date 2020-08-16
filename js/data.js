@@ -1,3 +1,23 @@
+const aboutItems = [
+    {
+        "title":"About",
+        "body":"Founded in 2016, World Trade Ventures (WTV) is a unique venture capital firm focused on supporting early stage technology companies operating out of the New York area. At World Trade Ventures we like to do things differently. We are a stage agnostic fund that focuses on finding the best entrepreneurs and supporting them throughout the life cycle of their company. Our main value comes through our direct connection with the companies and their founders and a deep understanding of the immediate needs of the company. We pride ourselves on our ability to support founders and help them achieve their goals."
+    },
+
+    {
+        "title":"What We Look For",
+        "body":"We invest in inspired entrepreneurs who are here to make a real change by creating and deploying disruptive technologies and products across a wide array of verticals including Enterprise SW, Fintech, AI/ML, Marketing Technology and Digital Health. Our portfolio companies enjoy a unique access to capital during their early stages that supports their efforts and enables them to enter growth and create true market leaders."
+    },
+
+    {
+        "title":"The WTV Way",
+        "body":"WTV is an agile and active VC. We maintain connections with our portfolio teams buy visiting them regularly and gaining a meaningful understanding of their business needs. This way, we can provide each portfolio company with the attention they need and deploy capital in a way that is most helpful to the founders. WTV operates its lean team out of the SilverTech Ventures’ offices. SilverTech runs a stage agnostic accelerator and a related venture fund with a large and very impressive portfolio operating in the World Trade Center in NYC. We sit with and work with out founders on a daily basis – out of the same space, providing them with not just liquidity. Our close relationships with our founders make sure that we are there for them whenever and however they need us. "
+    },
+
+]
+
+
+
 const companies=  [
         {
             "link": "https://www.wearshade.com/",

@@ -30,6 +30,14 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     }, 500);
   });
 
+aboutItems.forEach(el=> {
+    var item = `<div class="section-item">
+                <h3>${el.title}</h3>
+                <p>${el.body}</p>
+                </div>`
+    $(item).appendTo(".section-content")
+})  
+
 companies.forEach(el=> {
     var comp = `<li>
                 <a href="${el.link}"" target="_blank"><img src="images/logos/${el.logo}"/>
@@ -44,7 +52,7 @@ companies.forEach(el=> {
 articles.forEach(el=> {
     var article = ""
     if(el.title){
-        article = `<a href= "${el.link}" target="blank" style="background-image: url(${el.img})" class="news-item ${el.size} ${el.background}">
+        article = `<a href= "${el.link}" target="blank" id="${el.company}" class="news-item ${el.size} ${el.background}">
         <div class="item-content">
             <h4>${el.title}</h4>
             <p>${el.body}</p>
@@ -57,8 +65,10 @@ articles.forEach(el=> {
     } else{
         article = `<div class="news-item ${el.size} ${el.background}"><img src="${el.img}"></div>`
     }
-
      $(article).appendTo(".news-wraper")
+     if(el.title && el.img){
+        document.getElementById(el.company).style.backgroundImage=`url('${el.img}')`
+     }
 
 })
 
