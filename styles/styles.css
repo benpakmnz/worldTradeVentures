@@ -61,7 +61,7 @@ body .slide-action a:after, body input[type="submit"]:after {
   width: 10px;
   height: 10px;
   display: inline-block;
-  background-image: url("images/icons/arrow-right.svg");
+  background-image: url("../images/icons/arrow-right.svg");
   background-position: center;
   background-size: cover;
   margin-left: 10px;
@@ -805,7 +805,7 @@ footer h2::before {
 }
 
 .glide .slide-1 {
-  background-image: url("images/slide-1.png");
+  background-image: url("../images/slide-1.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -842,7 +842,7 @@ footer h2::before {
   width: 15px;
   height: 15px;
   position: absolute;
-  background-image: url("images/icons/arrow-right.svg");
+  background-image: url("../images/icons/arrow-right.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -859,7 +859,7 @@ footer h2::before {
   position: absolute;
   left: -10px;
   top: 10px;
-  background-image: url(images/icons/arrow-right.svg);
+  background-image: url("../images/icons/arrow-right.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
