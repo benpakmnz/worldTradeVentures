@@ -5,7 +5,7 @@ $field_company = $_POST['cf_company'];
 $field_website = $_POST['cf_website'];
 $field_message = $_POST['cf_message'];
 
-$mail_to = 'benpakmnz@gmail.com.com';
+$mail_to = 'yidi@worldtradeventures.com';
 $subject = 'Message from a site visitor '.$field_name;
 
 $body_message = 'From: '.$field_name."\n";
@@ -28,7 +28,7 @@ if ($mail_status) { ?>
 }
 else { ?>
 	<script language="javascript" type="text/javascript">
-		alert('Message failed. Please, send an email to gordon@template-help.com');
+		alert('Message failed. Please, send an email to yidi@worldtradeventures.com');
 		window.location = 'contact_page.html';
 	</script>
 <?php

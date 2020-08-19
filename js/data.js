@@ -11,7 +11,7 @@ const aboutItems = [
 
     {
         "title":"The WTV Way",
-        "body":"WTV is an agile and active VC. We maintain connections with our portfolio teams buy visiting them regularly and gaining a meaningful understanding of their business needs. This way, we can provide each portfolio company with the attention they need and deploy capital in a way that is most helpful to the founders. WTV operates its lean team out of the SilverTech Ventures’ offices. SilverTech runs a stage agnostic accelerator and a related venture fund with a large and very impressive portfolio operating in the World Trade Center in NYC. We sit with and work with out founders on a daily basis – out of the same space, providing them with not just liquidity. Our close relationships with our founders make sure that we are there for them whenever and however they need us. "
+        "body":"WTV is an agile and active VC. We maintain connections with our portfolio teams by visiting them regularly and gaining a meaningful understanding of their business needs. This way, we can provide each portfolio company with the attention they need and deploy capital in a way that is most helpful to the founders. WTV operates its lean team out of the SilverTech Ventures’ offices. SilverTech runs a stage agnostic accelerator and a related venture fund with a large and very impressive portfolio operating in the World Trade Center in NYC. We sit with and work with out founders on a daily basis – out of the same space, providing them with not just liquidity. Our close relationships with our founders make sure that we are there for them whenever and however they need us. "
     },
 
 ]
