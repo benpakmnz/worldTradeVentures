@@ -49,10 +49,10 @@ companies.forEach(el=> {
             $(comp).appendTo(".companies-desc ul")
 })
 
-articles.forEach(el=> {
+articles.forEach((el, index)=> {
     var article = ""
     if(el.title){
-        article = `<a href= "${el.link}" target="blank" id="${el.company}" class="news-item ${el.size} ${el.background}">
+        article = `<a href= "${el.link}" target="blank" id="art-${index}" class="news-item ${el.size} ${el.background}">
         <div class="item-content">
             <h4>${el.title}</h4>
             <p>${el.body}</p>
@@ -66,8 +66,9 @@ articles.forEach(el=> {
         article = `<div class="news-item ${el.size} ${el.background}"><img src="${el.img}"></div>`
     }
      $(article).appendTo(".news-wraper")
+
      if(el.title && el.img){
-        document.getElementById(el.company).style.backgroundImage=`url('${el.img}')`
+        document.getElementById(`art-${index}`).style.backgroundImage=`url('${el.img}')`
      }
 
 })

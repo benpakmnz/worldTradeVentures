@@ -119,21 +119,21 @@ const companies=  [
 
 const articles= [
     {
-        "title": "How to start a side gig?",
-        "body": "Whether it’s to make some extra cash or to test out a new career path (while you still have the safety of a regular income), side gigs are booming in America.",
-        "date": "23 july 2020",
-        "company":"lili",
-        "link":"https://www.lili.co/blog/how-to-start-a-side-gig",
+        "title": "Semperis Announces $40 Million in Growth Funding After Completing Six Consecutive Profitable Quarters",
+        "body": "Semperis’ Series B Funding Led by Insight Partners, to Capture Market Demand for Threat Mitigation and Rapid Response to Directory Attacks",
+        "date": "13 May 2020",
+        "company":"Semperis",
+        "link":"https://www.insightpartners.com/about-us/news-press/semperis-announces-40-million-in-growth-funding-after-completing-six-consecutive-profitable-quarters/",
         "size": "xl",
         "background": "light"
     },
 
     {
-        "title": "THE SERVICE LEADER’S GUIDE TO WORKFORCE KPIS",
-        "body": "You can’t manage what you don’t measure. In today’s rapidly evolving service landscape, actionable insights are the key to strategic adaptation. But not every KPI or method of measurement is equal. To understand what really moves the needle for your organization’s service delivery, you first need to understand what the metrics really mean, what they don’t, and how to use that data to drive meaningful change. ",
-        "date": "14 July 2020",
-        "company":"Aquant",
-        "link":"https://www.aquant.io/blog/service-leaders-guide-workforce-kpis/",
+        "title": "Israeli cybersecurity co Semperis raises $40m",
+        "body": "The company provides identity-driven cyber resilience for enterprises.",
+        "date": "13 May 2020",
+        "company":"Semperis",
+        "link":"https://en.globes.co.il/en/article-israeli-cybersecurity-co-semperis-raises-40m-1001328454",
         "size": "md",
         "background": "dark"
     },
@@ -145,42 +145,42 @@ const articles= [
     },
 
     {
-        "title": "Guide to Dealing with Tenant Conflicts",
-        "body": "As a property manager your goal is to maintain a peaceful environment where your tenants can all get along with each other. However, this isn’t always a realistic goal. Humans’ don’t always get along with each other and conflict will arise at some point. So what do you do when two tenants are feuding? Fear no more because we have come up with a guide to help you deal with tenant conflicts. ",
-        "date": "10 dec 2019",
-        "company":"Rentigo",
-        "link":"https://rentigo.com/guide-dealing-tenant-conflicts/",
+        "title": "Semperis Extends Industry’s Most Comprehensive Active Directory Threat Detection and Response Platform",
+        "body": "Enhances Directory Services Protector with Vulnerability Assessment, Security Reporting, and Auto-Remediation Capabilities",
+        "date": "23 June 2020",
+        "company":"Semperis",
+        "link":"https://www.semperis.com/press-release/semperis-extends-industrys-most-comprehensive-active-directory-threat-detection-and-response-platform/",
         "size": "md",
         "background": "light"
     },
 
     {
-        "title": "SQream Signs Strategic Multi-Year Multi-Million Dollar Contract with a Leading Tier-1 Mobile Operator",
-        "body": "Operator seeks to leverage critical insights from exponentially growing data to increase revenue, customer satisfaction and loyalty, as it grows its 5G base of subscribers",
-        "date": "22 july 2020",
-        "company":"SQream",
-        "link":"https://sqream.com/sqream-signs-strategic-multi-year-multi-million-dollar-contract-with-a-leading-tier-1-mobile-operator/",
+        "title": "Semperis Named a Gold Winner of the 2020 Edison Awards",
+        "body": "NEW YORK--(BUSINESS WIRE)--Semperis, the leader in identity-driven cyber resilience, today announced that Semperis Active Directory Forest Recovery (ADFR) has been named a gold winner in the Information Technology category for the 2020 Edison Awards. The Edison Awards, named after Thomas Alva Edison, recognizes and honors the world’s best innovations and innovators.",
+        "date": "02 April 2020",
+        "company":"Semperis",
+        "link":"https://www.businesswire.com/news/home/20200402005173/en/Semperis-Named-Gold-Winner-2020-Edison-Awards",
         "size": "md",
         "background": "dark",
         "img": "images/39.png"
     },
 
     {
-        "title": "[Yahoo! Finance] HYPR Announces the Launch of their New and Innovative Influencer Customer Relationship Management Tool",
-        "body": '"Powered by the ubiquitous Salesforce CRM, our platform lets you send and store outreach communications through integrated email," said the HYPR rep.',
-        "date": "16 december 2019",
-        "company":"HYPR",
-        "link":"https://sqream.com/sqream-signs-strategic-multi-year-multi-million-dollar-contract-with-a-leading-tier-1-mobile-operator/",
+        "title": "Semperis Named Best Business Continuity/Disaster Recovery Solution at 2020 SC Awards",
+        "body": 'Semperis, the leader in identity-driven cyber resilience, today announced that Semperis Active Directory Forest Recovery (ADFR) was named the Trust Award winner in the Best Business Continuity/Disaster Recovery Solution category of the 2020 SC Awards. Winners were announced on February 25, 2020 during the 24th annual SC Awards gala in San Francisco, presented by SC Media, a CyberRisk Alliance company.',
+        "date": "03 March 2020",
+        "company":"Semperis",
+        "link":"https://www.benzinga.com/pressreleases/20/03/b15464011/semperis-named-best-business-continuitydisaster-recovery-solution-at-2020-sc-awards",
         "size": "md",
         "background": "light"
     },
 
     {
-        "title": "National Drink Holidays",
-        "body": "Did you know that almost every single week there is a National Drink Holiday? Here’s a list of all the important holidays that liquor retailers",
-        "date": "13 july 2020",
-        "company":"CityHive",
-        "link":"https://www.cityhive.net/blog-post/national-drink-holidays/",
+        "title": "SQream Technologies raises $39.4 million for GPU-accelerated databases",
+        "body": "Data set analytics startup SQream Technologies today announced it has raised $39.4 million. The bulk of the new funds will go toward talent recruitment, product R&D, and enhancing the company’s customer delivery platforms, according to a spokesperson. SQream aims to lower the barrier to big data optimization with better performance, a reduced footprint, and cost savings over its competitors.",
+        "date": "24 June 2020",
+        "company":"SQream",
+        "link":"https://www.venturebeat.com/2020/06/24/sqream-technologies-raises-39-4-million-for-gpu-accelerated-databases/",
         "size": "xl",
         "background": "light"
     },
@@ -192,11 +192,11 @@ const articles= [
     },
 
     {
-        "title": "Why I’m Hanging Out With the Semperis Crew",
-        "body": "Let’s start with a little history lesson… Back in 2014, there were a series of articles calling for the dismantling and death of Active Directory (AD) for various reasons. Fast forward to 2018, and we made calls for its demise, or simply that companies should take their AD servers, throw them off the cliff and",
-        "date": "28 July 2020",
-        "company":"Semperis",
-        "link":"https://www.semperis.com/chris-roberts-semperis-crew/",
+        "title": "The Monthly Rundown: Startups to Watch from Shamus the Sales Guy – June",
+        "body": "Was it me or did June fly by? Hope everyone ended Q2 on a strong note. We’re 50 percent through (hopefully) the craziest year of our selling lives.",
+        "date": "14 July 2020",
+        "company":"SQream",
+        "link":"https://about.crunchbase.com/blog/monthly-startup-rundown-june-2020/?utm_content=134722823&utm_medium=social&utm_source=linkedin&hss_channel=lcp-2515598",
         "size": "xxl",
         "background": "light"
     },
@@ -208,11 +208,11 @@ const articles= [
     },
 
     {
-        "title": "How to Celebrate Pride Month Safely During the COVID-19 Pandemic",
-        "body": "As the world faces the COVID-19 pandemic, this year’s Pride Month will have to look different from any Pride that came before it. It may be hard to envision the physical celebrations and community spaces of Pride in this new normal. Luckily, there are still ways to honor the lives and victories of LGBTQ+ people this month while remaining socially distanced.",
-        "date": "2020",
-        "company":"Visit.org",
-        "link":"https://rentigo.com/guide-dealing-tenant-conflicts/",
+        "title": "Firedome raises $10 million to secure IoT devices against hacking",
+        "body": "Billions of devices are expected to be connected to the internet by 2030, according to Cisco, a chunk of which will be highly vulnerable to intrusion and data breach. Hewlett-Packard Enterprise reported in a recent study that as many as 70% of internet of things (IoT) devices contain well-known exploits. And from 2016 to 2017, Symantec traced a 600% increase in targeted attacks against IoT products.",
+        "date": "23 October 2019",
+        "company":"FireDome",
+        "link":"venturebeat.com/2019/10/23/firedome-raises-10-million-to-secure-iot-devices-against-hacking/",
         "size": "xxl",
         "background": "light"
     },
@@ -224,21 +224,21 @@ const articles= [
     },
 
     {
-        "title": "What can you expense as a freelancer? The E-commerce Edition",
-        "body": "You work with your hands. You sew clothes, you design jewelries or build nightstand. You go to the post office every day. You draft invoices, respond to customers’ emails, edit pictures of your products. When exactly are you supposed to organize and prepare for your taxes?! 😉 Well, that’s exactly when a Lili checking account comes in handy and why we wrote this recap of what you can count as a business expense if you run your own online store. ",
-        "date": "8 august 2020",
-        "company":"lili",
-        "link":"https://www.lili.co/blog/what-can-you-expense-as-a-freelancer-the-e-commerce-edition",
+        "title": "Firedome Wins CES 2020 Innovation Award for Cybersecurity and Personal Privacy",
+        "body": "Firedome named best of CES 2020 Innovation Awards Honoree. Firedome will showcase its real-time, dynamic endpoint cybersecurity solution at CES 2020",
+        "date": "3 December 2019",
+        "company":"FireDome",
+        "link":"https://www.prnewswire.com/news-releases/firedome-wins-ces-2020-innovation-award-for-cybersecurity-and-personal-privacy-300968094.html",
         "size": "md",
         "background": "light"
     },
 
     {
-        "title": "Firedome Welcomes IoT Industry Veteran Arsham Hatambeiki To Advisory Board",
-        "body": "Firedome is pleased to welcome Arsham Hatambeiki to our Advisory Board today. Arsham is SVP of Product and Technology at Universal Electronics, and brings over 15 years of leadership driving IoT Ecosystem and Innovation growth.",
-        "date": "27 july 2020",
-        "company":"firedome",
-        "link":"https://firedome.io/blog/firedome-welcomes-iot-industry-veteran-arsham-hatambeiki-to-advisory-board/",
+        "title": "Aquant raises $30 million for AI that gives customer service agents mission-critical data",
+        "body": "Organizational data is often scattered across systems, hidden within text, and locked within the minds of employees. Given the disparate channels, how might this data be unified and delivered to support agents engaged in service calls? Assaf Melochna and Shahar Chen, former colleagues at workforce management and service optimization company ClickSoftware, advocate an AI- and machine learning-based solution. The two cofounded Aquant, which algorithmically mines and analyzes data from various sources to learn manufacturing, utilities, and telecom companies’ unique service languages and map customer problems to solutions.",
+        "date": "30 January 2020",
+        "company":"Aquant",
+        "link":"venturebeat.com/2020/01/30/aquant-raises-30-million-for-ai-that-supplies-customer-service-agents-with-relevant-info/",
         "size": "xl",
         "background": "dark"
     },
@@ -247,5 +247,40 @@ const articles= [
         "img":"images/37.png",
         "size": "md",
         "background": "dark"
+    },
+    
+    {
+        "img":"images/38.png",
+        "size": "md",
+        "background": "dark"
+    },
+    {
+        "title": "Aquant Raises $30 Million in Series B Led by Insight Partners, To Close the Skills Gap in Service with AI",
+        "body": "NEW YORK–(BUSINESS WIRE)–Aquant, the leading service intelligence platform, announced today the close of a $30 million Series B funding round. This latest round of funding was led by Insight Partners with participation from existing investors including Lightspeed Venture Partners, Angular Ventures, and Silvertech Ventures. This investment brings the company’s total funding to $40 million in the last 14 months. Peter Sobiloff, Managing Director at Insight Partners, will join the company’s board of directors.",
+        "date": "30 January 2020",
+        "company":"Aquant",
+        "link":"techcrunch.com/2020/06/03/lili-seed-funding/",
+        "size": "xl",
+        "background": "light"
+    },
+    {
+        "title": "Aquant Announces RATIONAL USA to Deploy Its AI Solution",
+        "body": "Aquant, Inc. announced today that RATIONAL USA is implementing its Artificial Intelligence solution within the RATIONAL service organization. RATIONAL is the leading manufacturer of combi-steamer ovens for commercial kitchens.",
+        "date": "30 May 2020",
+        "company":"Aquant",
+        "link":"https://www.insightpartners.com/about-us/news-press/aquant-raises-30-million-in-series-b-led-by-insight-partners-to-close-the-skills-gap-in-service-with-ai/",
+        "size": "md",
+        "background": "dark",
+        "img": "images/39.png"
+    },
+
+    {
+        "title": "Lili raises $10M for its freelancer banking app",
+        "body": "Lili, a startup building banking products to meet the needs of freelance workers, is announcing that it has raised $10 million in seed funding.",
+        "date": "3 june 2020",
+        "company":"Lili",
+        "link":"https://www.newswire.com/news/aquant-announces-rational-usa-to-deploy-its-ai-solution-20501913",
+        "size": "md",
+        "background": "light"
     },
 ]
