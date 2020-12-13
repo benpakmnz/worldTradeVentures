@@ -13,6 +13,14 @@
 
 </head>
 <body>
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#about" onclick="closeNav()">about</a>
+        <a href="#portfolio" onclick="closeNav()">portfolio</a>
+        <a href="#news" onclick="closeNav()">news</a>
+        <a href="#footer" onclick="closeNav()">contact</a>
+      </div>
+      <div id="popShadow"></div>
     <nav>
         <a href="tel: 212-739-7890">(646) 326-1975</a>
         <ul>
@@ -23,6 +31,18 @@
         </ul>
     </nav>
     <header>
+        <div class="heading-mobile">
+            <div>
+                <img src="./images/logos/site-icon.svg" alt="World Trade Ventures icon">
+                <span class="large-logo-headding-text">
+                    world trade
+                    <span class="small-logo-headding-text"> ventures</span>
+                </span>
+            </div>
+            <button onclick="openNav()">
+                <img src="./images/icons/menu.svg">
+            </button>
+        </div>
         <div class="header-left">
             <div class="site-icon-wraper">
                 <img src="./images/logos/site-icon.svg" alt="World Trade Ventures icon">
@@ -30,12 +50,6 @@
             </div>
             <div class="social">
                 <span class="comp-name">world trade ventures</span>
-                <!-- <div class="social-wraper">
-                    <a class="social-link" href=""><img src="images/icons/instagram.svg"/></a>
-                    <a class="social-link" href=""><img src="images/icons/twitter.svg"/></a>
-                    <a class="social-link" href=""><img src="images/icons/behance.svg"/></a>
-                    <a class="social-link" href=""><img src="images/icons/faceboook.svg"/></a> 
-                </div> -->
             </div>
 
         </div>
@@ -47,42 +61,70 @@
                             <div class="slide-action">
                                 <img src="images/logos/site-logo-negative.svg"/>
                                 <h1>INVESTING IN PEOPLE</h1>
-                                <a href="#about">LOOK MORE</a>
+                                <a href="#about">MORE</a>
                             </div>
                     </li>
                   </ul>
                 </div>
-                <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">next</button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">prev</button>
-                  </div>
-              </div>
         </div>
     </header>
+    
     <section id="about">
         <h2 class="section-title">ABOUT <span class="trade-green">US</span></h2>
-        <div class="section-content"></div>
+        <div id="glide-about">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides about"></ul>
+            </div>
+
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                    <img src="./images/icons/arrow-left-black.svg">
+                </button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                    <img src="./images/icons/arrow-right-black.svg">
+                </button>
+              </div>
+        </div>
     </section>
 
     <section id="portfolio">
         <h2 class="section-title">PORTFOLIO</h2>
         <div id="glide-portfolio">
             <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides">
+              <ul class="glide__slides portfolio">
               </ul>
             </div>
             <div class="glide__arrows portfolio_arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--right" data-glide-dir="<">PREV</button>
-                <button class="glide__arrow glide__arrow--left" data-glide-dir=">">NEXT</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir="<">
+                    <img src="./images/icons/arrow-right.svg">
+                </button>
+                <button class="glide__arrow glide__arrow--left" data-glide-dir=">">
+                    <img src="./images/icons/arrow-left.svg">
+                </button>
               </div>
           </div>
           
         <div class="companies-desc"><ul></ul></div>
     </section>
 
-    <section id="news">
+     <section id="news">
         <h2 class="section-title trade-green">NEWS</h2>
         <div class="news-wraper">
+            <div id="glide-news">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides news"></ul>
+                </div>
+    
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <img src="./images/icons/arrow-left-black.svg">
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <img src="./images/icons/arrow-right-black.svg">
+                    </button>
+                  </div>
+            </div>
+
 
             <!-- <div class="news-item blog">
                 <img src="images/43.png" class="item-background">
@@ -111,9 +153,9 @@
         
         </div>
     </section>
-    <footer id="footer">
+    <!-- <footer id="footer">
         <h2 class="section-title">GET <span class="trade-green">IN TOUCH</span></h2>
-        <div class="footer-content">
+         <div class="footer-content">
             <p class="info">World Trade Ventures 7 </br>
                             World Trade Center, 10th Fl.</br>
                             New York, NY 10007 </br>
@@ -138,10 +180,6 @@
                         <label for="massage">massage</label>
                         <textarea id="massage" name="cf_massage" type="text" placeholder="Massage"></textarea>
                 </div> 
-                <!-- <div class="upload-btn-wrapper">
-                    <button class="btn">Upload a file</button>
-                    <input type="file" name="myfile" multiple="multiple" />
-                  </div> -->
                     <input type="submit" value="SEND">
             </form>
         </div>
@@ -150,9 +188,8 @@
             <img src="images/logos/site-logo.png"/>
             <span>© bardana 2020. All Rights Reserved.</span>
         </div>
-        
+    </footer> -->
 
-    </footer>
 </body>
     <script type="text/javascript" src="js/data.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
