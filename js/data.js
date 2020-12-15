@@ -112,7 +112,15 @@ const companies=  [
         "logo": "igentify.png",
         "name": "igentify",
         "description":"Founded in October 2016, Igentify’s team of globally renowned geneticists, experienced engineers, animators, and UX/UI designers are redefining the protocols of traditional medicine. In January 2019 Deloitte selected Igentify as an Israeli startup at the forefront of the Digital R&D revolution."
+        },
+        {
+        "link": "http://www.eatwoodspoon.com/",
+        "logo": "woodspoon-logo.svg",
+        "name": "woodspoon",
+        "description":"WoodSpoon is a community-based marketplace that facilitates the delivery of homemade food from local chefs.At WoodSpoon we empower our home chefs to share their culture and passion with others. Customers can order for immediate delivery or schedule ahead on WoodSpoon’s mobile app."
         }
+
+
 
     ]
 

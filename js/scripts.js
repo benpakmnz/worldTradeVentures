@@ -73,6 +73,8 @@ $( document ).ready(function(){
           
              if(el.title && el.img){
                 document.getElementById(`art-${index}`).style.backgroundImage=`url('${el.img}')`
+                document.getElementById(`art-${index}`).classList.add('dark');
+                document.getElementById(`art-${index}`).classList.add('light');
              }
           
           })
@@ -118,36 +120,29 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
   
 
-companies.forEach(el=> {
+companies.forEach((el,index)=> {
+    
     var comp = `<li>
-                  <a href="${el.link}"" target="_blank"><img src="images/logos/${el.logo}"/></a>
+                  <a id="comp-${index}" href="${el.link}" target="_blank"><img src="images/logos/${el.logo}"/>
+                    <div class="tooltiptext">
+                            <h3>${el.name}</h3>
+                            <p>${el.description}</p> 
+                            <button onclick="window.open('${el.link}', '_blank');" type="button">find out more</button>
+                    </div>
+                  </a>
                 </li>`
             $(comp).appendTo(".companies-desc ul")
+            if(window.screen.width <= 1024){
+              $(`#comp-${index}`).click(function() {
+                return false;
+              });
+              $(`a#comp-${index}`).click(function() {
+                $(this).find(".tooltiptext").css("opacity","1");
+                $(this).find("button").css("display","block");
+              });
+
+            }
 })
-
-// articles.forEach((el, index)=> {
-//     var article = ""
-//     if(el.title){
-//         article = `<a href= "${el.link}" target="blank" id="art-${index}" class="news-item ${el.size} ${el.background}">
-//         <div class="item-content">
-//             <h4>${el.title}</h4>
-//             <p>${el.body}</p>
-//         </div>
-//         <div class="item-info">
-//            <span>${el.date}</span>
-//            <span>${el.company}</span>
-//         </div>
-//        </a>`
-//     } else{
-//         article = `<div class="news-item ${el.size} ${el.background}"><img src="${el.img}"></div>`
-//     }
-//      $(article).appendTo(".news-wraper")
-
-//      if(el.title && el.img){
-//         document.getElementById(`art-${index}`).style.backgroundImage=`url('${el.img}')`
-//      }
-
-// })
 
 Object.defineProperty(Array.prototype, 'chunk_inefficient', {
   value: function(chunkSize) {
@@ -160,39 +155,19 @@ Object.defineProperty(Array.prototype, 'chunk_inefficient', {
   }
 });
 
-// articles.forEach((el, index)=> {
-//   var article = ""
-//   if(el.title){
-//       article = `<a href= "${el.link}" target="blank" id="art-${index}" class="news-item ${el.size} ${el.background}">
-//       <div class="item-content">
-//           <h4>${el.title}</h4>
-//           <p>${el.body}</p>
-//       </div>
-//       <div class="item-info">
-//          <span>${el.date}</span>
-//          <span>${el.company}</span>
-//       </div>
-//      </a>`
-//   } else{
-//       article = `<div class="news-item ${el.size} ${el.background}"><img src="${el.img}"></div>`
-//   }
-//    $(article).appendTo(".news-wraper")
-
-//    if(el.title && el.img){
-//       document.getElementById(`art-${index}`).style.backgroundImage=`url('${el.img}')`
-//    }
-
-// })
-
-
 $(".companies-desc a").hover(function() {
 var el_pos = $(this).offset().left;
 var screen_width = $(".companies-desc").width()
 var offset_width = screen_width - el_pos
-  if(offset_width < 320 ){
+  if(offset_width < 400 ){
   $(this).find('.tooltiptext').addClass('right');
-  }else if(offset_width > 1000){
+  $(this).find('.tooltiptext').removeClass('left');
+  }else if(offset_width > 990){
   $(this).find('.tooltiptext').addClass('left');
+  $(this).find('.tooltiptext').removeClass('right');
+  }else{
+    $(this).find('.tooltiptext').removeClass('left');
+    $(this).find('.tooltiptext').removeClass('right');
   }
   });
 
