@@ -610,80 +610,95 @@ section {
                         }
 
                     }
-    
-                    .tooltiptext {
-                        visibility: hidden;
-                        width: 470px;
-                        background-color: #4bdece;
-                        color: #fff;
-                        position: absolute;
-                        z-index: 1;
-                        bottom: 70px;
-                        opacity: 0;
-                        transition: opacity 0.3s;
-                        box-sizing: border-box;
-                        letter-spacing: 1px;
-                        font-size: 15px;
-                        display: inline-block;
-                        vertical-align: middle;
-                        padding: 20px;
-                        left: 50%;
-                        transform: translate(-50%, 0);
-                                      
-                            h3 {
-                                font-size: 30px;
-                                font-weight: 800;
-                                font-family: 'Oswald', sans-serif;
-                                letter-spacing: 3px;
-                                margin: 0 0 16px;
-                                text-transform: uppercase;
-                            }
+                } 
 
-                            button{
-                                display: none;
-                            }
-                        
-                            &::after {
-                                content: "";
-                                position: absolute;
-                                top: 100%;
-                                border-width: 20px;
-                                border-style: solid;
-                                border-color: #4bdece transparent transparent transparent;
-                                left: 50%;
-                                transform: translate(-50%, 0);
-                            }
+                .tooltiptext {
+                    visibility: hidden;
+                    width: 470px;
+                    background-color: #4bdece;
+                    color: #fff;
+                    position: absolute;
+                    z-index: 20;
+                    bottom: 70px;
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                    box-sizing: border-box;
+                    letter-spacing: 1px;
+                    font-size: 15px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding: 20px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
 
-                            &.right{
-                              right: 37px;
-                              left: initial;
-                              transform:translate(0, 0);
 
-                              &::after {
-                                left: initial;
-                                right: 30px;
-                            }
-
-                            }
-                            &.left{
-                                left: 37px;
-                                transform:translate(0, 0);
-  
-                                &::after {
-                                  left: 80px;
-                              }
-                            }
-
-                        
-                    }
-    
-                    &:hover{
-                        .tooltiptext {
-                            visibility: visible;
-                            opacity: 1;
+                    @media only screen and (max-width: 1024px) {
+                        position: fixed;
+                        right: 0px!important;
+                        left: 0px!important;
+                        margin: auto;
+                        top: unset;
+                        width: 80vw;
+                        transform: translate(0, -73%)!important;
+                        -webkit-box-shadow: 0px 2px 22px -5px #000000;
+                        box-shadow: 0px 2px 22px -5px #000000;
+                        &:after{
+                            display: none;
                         }
                     }
-                } 
+                                  
+                        h3 {
+                            font-size: 30px;
+                            font-weight: 800;
+                            font-family: 'Oswald', sans-serif;
+                            letter-spacing: 3px;
+                            margin: 0 0 16px;
+                            text-transform: uppercase;
+                        }
+
+                        button{
+                            display: none;
+                            margin: auto;
+                        }
+                    
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 100%;
+                            border-width: 20px;
+                            border-style: solid;
+                            border-color: #4bdece transparent transparent transparent;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                        }
+
+                        &.right{
+                          right: 37px;
+                          left: initial;
+                          transform:translate(0, 0);
+
+                          &::after {
+                            left: initial;
+                            right: 30px;
+                        }
+
+                        }
+                        &.left{
+                            left: 37px;
+                            transform:translate(0, 0);
+
+                            &::after {
+                              left: 80px;
+                          }
+                        }
+                }
+
+                &:hover{
+                    .tooltiptext {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
     
             }
         }
@@ -1146,11 +1161,12 @@ footer {
   
   #popShadow{
     display: block;
-    background-color:rgba(0,0,0,0.4);
+    background-color:rgba(0,0,0,0.5);
     height: 100vh;
     width: 100vw;
     position: fixed;
     display: none;
+    z-index: 10;
   }
 
 

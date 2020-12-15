@@ -683,13 +683,13 @@ section:first-of-type {
   }
 }
 
-#portfolio .companies-desc ul li a .tooltiptext {
+#portfolio .companies-desc ul li .tooltiptext {
   visibility: hidden;
   width: 470px;
   background-color: #4bdece;
   color: #fff;
   position: absolute;
-  z-index: 1;
+  z-index: 20;
   bottom: 70px;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
@@ -706,7 +706,25 @@ section:first-of-type {
           transform: translate(-50%, 0);
 }
 
-#portfolio .companies-desc ul li a .tooltiptext h3 {
+@media only screen and (max-width: 1024px) {
+  #portfolio .companies-desc ul li .tooltiptext {
+    position: fixed;
+    right: 0px !important;
+    left: 0px !important;
+    margin: auto;
+    top: unset;
+    width: 80vw;
+    -webkit-transform: translate(0, -73%) !important;
+            transform: translate(0, -73%) !important;
+    -webkit-box-shadow: 0px 2px 22px -5px #000000;
+    box-shadow: 0px 2px 22px -5px #000000;
+  }
+  #portfolio .companies-desc ul li .tooltiptext:after {
+    display: none;
+  }
+}
+
+#portfolio .companies-desc ul li .tooltiptext h3 {
   font-size: 30px;
   font-weight: 800;
   font-family: 'Oswald', sans-serif;
@@ -715,11 +733,12 @@ section:first-of-type {
   text-transform: uppercase;
 }
 
-#portfolio .companies-desc ul li a .tooltiptext button {
+#portfolio .companies-desc ul li .tooltiptext button {
   display: none;
+  margin: auto;
 }
 
-#portfolio .companies-desc ul li a .tooltiptext::after {
+#portfolio .companies-desc ul li .tooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -731,29 +750,29 @@ section:first-of-type {
           transform: translate(-50%, 0);
 }
 
-#portfolio .companies-desc ul li a .tooltiptext.right {
+#portfolio .companies-desc ul li .tooltiptext.right {
   right: 37px;
   left: initial;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
 
-#portfolio .companies-desc ul li a .tooltiptext.right::after {
+#portfolio .companies-desc ul li .tooltiptext.right::after {
   left: initial;
   right: 30px;
 }
 
-#portfolio .companies-desc ul li a .tooltiptext.left {
+#portfolio .companies-desc ul li .tooltiptext.left {
   left: 37px;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
 
-#portfolio .companies-desc ul li a .tooltiptext.left::after {
+#portfolio .companies-desc ul li .tooltiptext.left::after {
   left: 80px;
 }
 
-#portfolio .companies-desc ul li a:hover .tooltiptext {
+#portfolio .companies-desc ul li:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
@@ -1279,11 +1298,12 @@ footer h2::before {
 
 #popShadow {
   display: block;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
   width: 100vw;
   position: fixed;
   display: none;
+  z-index: 10;
 }
 
 .glide__arrow {

@@ -122,23 +122,27 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
 companies.forEach((el,index)=> {
     
-    var comp = `<li>
-                  <a id="comp-${index}" href="${el.link}" target="_blank"><img src="images/logos/${el.logo}"/>
+    var comp = `<li id="comp-${index}">
+                    <a id="main-link-${index}" href="${el.link}" target="_blank">
+                      <img src="images/logos/${el.logo}"/>
+                    </a>
                     <div class="tooltiptext">
-                            <h3>${el.name}</h3>
-                            <p>${el.description}</p> 
-                            <button onclick="window.open('${el.link}', '_blank');" type="button">find out more</button>
-                    </div>
-                  </a>
+                      <button class="closebtn" onclick="popupHide(event,'#comp-${index} .tooltiptext');">&times;</button>
+                      <h3>${el.name}</h3>
+                      <p>${el.description}</p> 
+                      <a href="${el.link}" target="_blank">find out more</a>
+                  </div>
                 </li>`
             $(comp).appendTo(".companies-desc ul")
             if(window.screen.width <= 1024){
-              $(`#comp-${index}`).click(function() {
+              $(`#main-link-${index}`).click(function(e) {
+                e.preventDefault();
+                $(`#comp-${index}`).find(".tooltiptext").css("opacity","1");
+                $(`#comp-${index}`).find(".tooltiptext").find("a").css("display","block");
+                $(`#comp-${index}`).find(".closebtn").css("display","");
+                popShadowHandler("block");
+
                 return false;
-              });
-              $(`a#comp-${index}`).click(function() {
-                $(this).find(".tooltiptext").css("opacity","1");
-                $(this).find("button").css("display","block");
               });
 
             }
@@ -174,10 +178,30 @@ var offset_width = screen_width - el_pos
 
   function openNav() {
     document.getElementById("sidenav").style.width = "250px";
-    document.getElementById("popShadow").style.display="block"
+    popShadowHandler("block");
   }
   
   function closeNav() {
     document.getElementById("sidenav").style.width = "0";
-    document.getElementById("popShadow").style.display="none"
+    popShadowHandler("none");
+  }
+
+  function popShadowHandler(display){
+    if(display !=='none'){
+      $('body').css("overflow", "hidden")
+    }else{
+      $('body').css("overflow", "auto")
+    }
+
+    $("#popShadow").css("display",display);
+    $("#popShadow").click(function(){
+      $("#popShadow").css("display","none");
+      closeNav();
+    })
+  }
+
+  function popupHide(event, el){
+    popShadowHandler('none');
+    $(`${el}`).css("opacity","0");
+    event.stopPropagation()
   }
