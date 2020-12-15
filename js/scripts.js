@@ -1,5 +1,5 @@
 $( document ).ready(function(){
-    var headerGlide = new Glide('.glide', {
+    var headerGlide = new Glide('#glide-header', {
       perView: 1,
       dragThreshold: false,
     })  
@@ -48,7 +48,7 @@ $( document ).ready(function(){
             splitArticles= articles.chunk_inefficient(6);
           }    
       
-
+        
         splitArticles.forEach((slide, slideIndex) =>{
         var slideItem = `<li class="glide__slide news-slide-warper num-${slideIndex}"></li>`
         $(slideItem).appendTo(".news")
@@ -71,7 +71,7 @@ $( document ).ready(function(){
         }
              $(article).appendTo(`.num-${slideIndex}`)
           
-             if(el.title && el.img){
+             if(el.title && el.img && $(`art-${index}`).length>0){
                 document.getElementById(`art-${index}`).style.backgroundImage=`url('${el.img}')`
                 document.getElementById(`art-${index}`).classList.add('dark');
                 document.getElementById(`art-${index}`).classList.add('light');
@@ -105,10 +105,10 @@ $( document ).ready(function(){
       })
     });
 
-    headerGlide.mount();
-    aboutGlide.mount();
-    newsGlide.mount();
-    portfolioGlide.mount();
+    $("#glide-header").length> 0?headerGlide.mount():null;
+    $("#glide-about").length> 0?aboutGlide.mount():null;
+    $("#glide-news").length> 0? newsGlide.mount():null;
+    $("#glide-portfolio").length> 0?portfolioGlide.mount():null;
 })
 
 $(document).on('click', 'a[href^="#"]', function (event) {

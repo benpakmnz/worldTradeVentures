@@ -155,10 +155,6 @@ nav {
 header{
     height: 100vh;
     display: flex;
-
-    &.inner-page{
-        height: unset;  
-    }
     @media only screen and (max-width: 475px) {
         flex-direction: column;
         height: unset;
@@ -246,6 +242,7 @@ header{
 
         @media only screen and (max-width: 475px) {
             width: 100%;
+            margin-top: 70px;
         }
 
         .glide {
@@ -326,13 +323,20 @@ header{
     .heading-mobile{
         display: flex;
         -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
         justify-content: space-between;
         width: 100%;
         height: 70px;
+        -webkit-box-align: center;
         align-items: center;
         padding: 16px;
         box-sizing: border-box;
+        background: #1d2434;
+        color: white;
+        position: fixed;
+        top: 0;
+        z-index: 3;
+        -webkit-box-shadow: 0px 12px 24px 0px rgba(0,0,0,0.55);
+        box-shadow: 0px 12px 24px 0px rgba(0,0,0,0.55);
 
         img {
             height: 40px;
@@ -357,7 +361,7 @@ header{
         }
 
         button{
-            background-color: #fff;
+            // background-color: #fff;
             border: 0;
         }
 
@@ -427,7 +431,7 @@ section {
     margin:auto;
 
     &.inner{
-       margin: 0 auto 70px ; 
+       margin: 70px auto ; 
     }
 
     h3 {

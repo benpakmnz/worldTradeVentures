@@ -158,6 +158,10 @@ header {
   display: flex;
 }
 
+header.inner-page {
+  height: unset;
+}
+
 @media only screen and (max-width: 475px) {
   header {
     -webkit-box-orient: vertical;
@@ -483,6 +487,10 @@ section:first-of-type {
 #about {
   max-width: 80vw;
   margin: auto;
+}
+
+#about.inner {
+  margin: 0 auto 70px;
 }
 
 #about h3 {
@@ -1261,23 +1269,25 @@ footer h2::before {
 
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 0px;
   position: fixed;
-  z-index: 1;
+  z-index: 30;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #1d2434;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding-top: 60px;
+  -webkit-box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.55);
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: white;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
