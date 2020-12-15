@@ -139,7 +139,7 @@ companies.forEach((el,index)=> {
                 e.preventDefault();
                 $(`#comp-${index}`).find(".tooltiptext").css("opacity","1");
                 $(`#comp-${index}`).find(".tooltiptext").find("a").css("display","block");
-                $(`#comp-${index}`).find(".closebtn").css("display","");
+                $(`#comp-${index}`).find(".closebtn").css("display","block");
                 popShadowHandler("block");
 
                 return false;
