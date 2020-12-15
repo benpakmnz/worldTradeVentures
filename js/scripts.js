@@ -127,10 +127,11 @@ companies.forEach((el,index)=> {
                       <img src="images/logos/${el.logo}"/>
                     </a>
                     <div class="tooltiptext">
-                      <button class="closebtn" onclick="popupHide(event,'#comp-${index} .tooltiptext');">&times;</button>
+
                       <h3>${el.name}</h3>
                       <p>${el.description}</p> 
                       <a href="${el.link}" target="_blank">find out more</a>
+                      <button class="closebtn" onclick="popupHide(event,'#comp-${index} .tooltiptext');">&times;</button>
                   </div>
                 </li>`
             $(comp).appendTo(".companies-desc ul")
