@@ -32,6 +32,9 @@ body{
         font-weight: 800;
         z-index: 200;
         opacity: 0.05;
+            @media screen and (max-width: 414px) {
+                font-size: 100px;
+            }
         }
     }
     
@@ -73,6 +76,74 @@ body{
             margin-left: 10px;
         }
     }
+
+    .tooltiptext-fixed {
+        position: fixed;
+        width: 80vw;
+        max-width: 529px;
+        box-shadow: 0px 2px 22px -5px #000000;
+        background-color: #4bdece;
+        color: #fff;
+        z-index: 20;
+        opacity: 0;
+        transition: opacity 0.3s;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+        font-size: 15px;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 20px;
+        top: 50%;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+                    
+            h3 {
+                font-size: 30px;
+                font-weight: 800;
+                font-family: 'Oswald', sans-serif;
+                letter-spacing: 3px;
+                margin: 0 0 16px;
+                text-transform: uppercase;
+            }
+
+            button.closebtn {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                background: #3eab9f;
+                border: none;
+                font-size: 35px;
+                color: white;
+                height: 27px;
+                width: 27px;
+                padding: 2px 0 0;
+                line-height: 0;
+                border-radius: 30px;
+                text-align: center;
+                &:focus {
+                    outline: none;
+                    background-color: #308279!important;
+                }
+            }
+             a {
+                color: white;
+                font-weight: bold;
+                background: #308279;
+                text-decoration: none;
+                padding: 10px 10px;
+                margin-top: 10px;
+                display: block;
+                border-radius: 50px;
+                max-width: 80%;
+                margin: auto;
+            }
+
+            p {
+                line-height: 25px;
+            }
+            
+    }
 }
 
 nav {
@@ -108,6 +179,22 @@ nav {
             border-bottom: 1px solid white;
             outline: none;
             padding-bottom: 2px;
+        }
+    }
+
+    &.inner-page{
+        a{
+            color:$trade-dark;
+            &:hover{
+                border-color: black;
+            }
+
+            &.link-selected{
+                color:$trade-green;
+                font-weight: 600;
+                border-bottom: 1px solid $trade-green;
+                padding-bottom: 2px;
+            }
         }
     }
 
@@ -158,10 +245,24 @@ header{
 
     &.inner-page{
         height: unset;  
+        background: #d3d3d338;
+        padding-bottom: 20px;
+
+        .header-left{
+            &::before {
+                content: "";
+            } 
+
+        }
     }
     @media only screen and (max-width: 475px) {
         flex-direction: column;
         height: unset;
+
+        &.inner-page{
+            background:none;
+            padding-bottom: unset;
+        }
     }
 
     .header-left {
@@ -464,11 +565,15 @@ section {
         }
     }
 
-    // &::before {
-    //     content: 'about';
-    //     left: 48px;
-    //     top: 124px;
-    // }
+    &::before {
+        content: 'about';
+        left: -90px;
+        top: 128px;
+
+        @media only screen and (max-width: 1024px) {
+            top: 14px;
+        }
+    }
 
     .glide__arrows{  
         .glide__arrow--left{
@@ -509,14 +614,19 @@ section {
 
 
 #portfolio{
-    // &::before {
-    //     content: 'PORTFOLIO';
-    //     top: 65px;
-    //     right: 0;
-    //     overflow: hidden;
-    //     display: inline-block;
-    //     width: 655px;
-    // }
+    &::before {
+        content: 'PORTFOLIO';
+        top: 65px;
+        right: 0;
+        overflow: hidden;
+        display: inline-block;
+        // width: 655px;
+
+        @media only screen and (max-width: 1024px) {
+            top: -34px;
+            left: 97px;
+        }
+    }
 
     #glide-portfolio{
         position: relative;
@@ -534,12 +644,7 @@ section {
         background-color: $trade-dark;
         position: relative;
         padding: 91px 0;
-        // &:after{
-        //     content: '04';
-        //     right: 60px;
-        //     top: 30px;
-        //     color:white;
-        // }
+
         @media only screen and (max-width: 1025px) {
             padding: 15px 0 25px;
         }
@@ -573,7 +678,7 @@ section {
                     width: 25%;
                     }
     
-                a{
+                .comp-item{
                     background: initial;
                     border: 0;
                     padding: 5px;
@@ -638,22 +743,6 @@ section {
                     padding: 20px;
                     left: 50%;
                     transform: translate(-50%, 0);
-
-
-                    @media only screen and (max-width: 1024px) {
-                        position: fixed;
-                        right: 0px!important;
-                        left: 0px!important;
-                        margin: auto;
-                        top: unset;
-                        width: 80vw;
-                        transform: translate(0, -73%)!important;
-                        -webkit-box-shadow: 0px 2px 22px -5px #000000;
-                        box-shadow: 0px 2px 22px -5px #000000;
-                        &:after{
-                            display: none;
-                        }
-                    }
                                   
                         h3 {
                             font-size: 30px;
@@ -665,7 +754,6 @@ section {
                         }
 
                         button{
-                            // display: none;
                             margin: auto;
                         }
                     
@@ -1100,10 +1188,18 @@ footer {
 
     h2::before {
         content:'contacts';
-        color: white;
+        color: white!important;
         font-family: 'Montserrat', sans-serif;
         top: -66px;
-        right: 240px;
+        right: 40px;
+
+        @media (max-width: 414px){
+            top: -25px;
+            right: 0;
+            width: 314px;
+            text-align: right;
+            overflow: hidden;
+        }
     }
 
 
@@ -1136,7 +1232,7 @@ footer {
 .sidenav {
     height: 100%;
     width: 0px;
-    position: fixed;
+    position: absolute;
     z-index: 30;
     top: 0;
     right: 0;
@@ -1155,6 +1251,10 @@ footer {
     color:white;
     display: block;
     transition: 0.3s;
+
+    &.link-selected{
+        color:$trade-green;
+    }
   }
   
   .sidenav a:hover {

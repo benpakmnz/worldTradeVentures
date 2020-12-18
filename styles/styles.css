@@ -29,6 +29,12 @@ body section::before, body footer h2::before {
   opacity: 0.05;
 }
 
+@media screen and (max-width: 414px) {
+  body section::before, body footer h2::before {
+    font-size: 100px;
+  }
+}
+
 body section:after, body .companies-desc:after {
   font-size: 4vw;
   font-family: 'Oswald', sans-serif;
@@ -65,6 +71,79 @@ body .slide-action a:after, body input[type="submit"]:after {
   background-position: center;
   background-size: cover;
   margin-left: 10px;
+}
+
+body .tooltiptext-fixed {
+  position: fixed;
+  width: 80vw;
+  max-width: 529px;
+  -webkit-box-shadow: 0px 2px 22px -5px #000000;
+          box-shadow: 0px 2px 22px -5px #000000;
+  background-color: #4bdece;
+  color: #fff;
+  z-index: 20;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 1px;
+  font-size: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px;
+  top: 50%;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .tooltiptext-fixed h3 {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+}
+
+body .tooltiptext-fixed button.closebtn {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: #3eab9f;
+  border: none;
+  font-size: 35px;
+  color: white;
+  height: 27px;
+  width: 27px;
+  padding: 2px 0 0;
+  line-height: 0;
+  border-radius: 30px;
+  text-align: center;
+}
+
+body .tooltiptext-fixed button.closebtn:focus {
+  outline: none;
+  background-color: #308279 !important;
+}
+
+body .tooltiptext-fixed a {
+  color: white;
+  font-weight: bold;
+  background: #308279;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin-top: 10px;
+  display: block;
+  border-radius: 50px;
+  max-width: 80%;
+  margin: auto;
+}
+
+body .tooltiptext-fixed p {
+  line-height: 25px;
 }
 
 nav {
@@ -106,6 +185,21 @@ nav a {
 nav a:hover, nav a:focus {
   border-bottom: 1px solid white;
   outline: none;
+  padding-bottom: 2px;
+}
+
+nav.inner-page a {
+  color: #1d2434;
+}
+
+nav.inner-page a:hover {
+  border-color: black;
+}
+
+nav.inner-page a.link-selected {
+  color: #4bdece;
+  font-weight: 600;
+  border-bottom: 1px solid #4bdece;
   padding-bottom: 2px;
 }
 
@@ -160,6 +254,12 @@ header {
 
 header.inner-page {
   height: unset;
+  background: #d3d3d338;
+  padding-bottom: 20px;
+}
+
+header.inner-page .header-left::before {
+  content: "";
 }
 
 @media only screen and (max-width: 475px) {
@@ -169,6 +269,10 @@ header.inner-page {
         -ms-flex-direction: column;
             flex-direction: column;
     height: unset;
+  }
+  header.inner-page {
+    background: none;
+    padding-bottom: unset;
   }
 }
 
@@ -532,6 +636,18 @@ section:first-of-type {
   }
 }
 
+#about::before {
+  content: 'about';
+  left: -90px;
+  top: 128px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #about::before {
+    top: 14px;
+  }
+}
+
 #about .glide__arrows .glide__arrow--left {
   left: -1em;
 }
@@ -561,6 +677,21 @@ section:first-of-type {
   }
   #about .glide__arrows .glide__arrow--right {
     right: -1em;
+  }
+}
+
+#portfolio::before {
+  content: 'PORTFOLIO';
+  top: 65px;
+  right: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1024px) {
+  #portfolio::before {
+    top: -34px;
+    left: 97px;
   }
 }
 
@@ -640,7 +771,7 @@ section:first-of-type {
   }
 }
 
-#portfolio .companies-desc ul li a {
+#portfolio .companies-desc ul li .comp-item {
   background: initial;
   border: 0;
   padding: 5px;
@@ -657,7 +788,7 @@ section:first-of-type {
 }
 
 @media only screen and (max-width: 425px) {
-  #portfolio .companies-desc ul li a:after {
+  #portfolio .companies-desc ul li .comp-item:after {
     content: "";
     display: block;
     width: 50%;
@@ -671,21 +802,21 @@ section:first-of-type {
   }
 }
 
-#portfolio .companies-desc ul li a img {
+#portfolio .companies-desc ul li .comp-item img {
   max-width: 200px;
   max-height: 50px;
   vertical-align: middle;
 }
 
 @media only screen and (max-width: 1440px) {
-  #portfolio .companies-desc ul li a img {
+  #portfolio .companies-desc ul li .comp-item img {
     max-width: 150px;
     max-height: 35px;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  #portfolio .companies-desc ul li a img {
+  #portfolio .companies-desc ul li .comp-item img {
     max-width: 100%;
     max-height: 20px;
   }
@@ -712,24 +843,6 @@ section:first-of-type {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-}
-
-@media only screen and (max-width: 1024px) {
-  #portfolio .companies-desc ul li .tooltiptext {
-    position: fixed;
-    right: 0px !important;
-    left: 0px !important;
-    margin: auto;
-    top: unset;
-    width: 80vw;
-    -webkit-transform: translate(0, -73%) !important;
-            transform: translate(0, -73%) !important;
-    -webkit-box-shadow: 0px 2px 22px -5px #000000;
-    box-shadow: 0px 2px 22px -5px #000000;
-  }
-  #portfolio .companies-desc ul li .tooltiptext:after {
-    display: none;
-  }
 }
 
 #portfolio .companies-desc ul li .tooltiptext h3 {
@@ -1237,10 +1350,20 @@ footer .credit img {
 
 footer h2::before {
   content: 'contacts';
-  color: white;
+  color: white !important;
   font-family: 'Montserrat', sans-serif;
   top: -66px;
-  right: 240px;
+  right: 40px;
+}
+
+@media (max-width: 414px) {
+  footer h2::before {
+    top: -25px;
+    right: 0;
+    width: 314px;
+    text-align: right;
+    overflow: hidden;
+  }
 }
 
 .upload-btn-wrapper {
@@ -1270,7 +1393,7 @@ footer h2::before {
 .sidenav {
   height: 100%;
   width: 0px;
-  position: fixed;
+  position: absolute;
   z-index: 30;
   top: 0;
   right: 0;
@@ -1291,6 +1414,10 @@ footer h2::before {
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.sidenav a.link-selected {
+  color: #4bdece;
 }
 
 .sidenav a:hover {
