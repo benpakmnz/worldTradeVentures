@@ -25,7 +25,7 @@ body section::before, body footer h2::before {
   height: 100px;
   color: black;
   font-weight: 800;
-  z-index: 200;
+  z-index: 16;
   opacity: 0.05;
 }
 
@@ -380,6 +380,7 @@ header .header-left .site-icon-wraper {
 
 header .header-left .site-icon-wraper img {
   width: 4vw;
+  cursor: pointer;
 }
 
 header .header-right {

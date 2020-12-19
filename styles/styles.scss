@@ -30,7 +30,7 @@ body{
         height: 100px;
         color: black;
         font-weight: 800;
-        z-index: 200;
+        z-index: 16;
         opacity: 0.05;
             @media screen and (max-width: 414px) {
                 font-size: 100px;
@@ -339,6 +339,7 @@ header{
         
             img {
                 width: 4vw;
+                cursor: pointer;
             }
         }
     }

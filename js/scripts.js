@@ -6,12 +6,12 @@ var isMobile = false; //initiate as false
       isMobile = true;
   }
 
-  $('#site-logo').click(function(){
-    window.location.href='/';})
-  $('#site-logo-mobile').click(function(){
-    window.location.href='/';})
-
   $( document ).ready(function(){
+
+    $('#site-logo').click(function(){
+      window.location.href='index.html';})
+    $('#site-logo-mobile').click(function(){
+      window.location.href='index.html';})
 
    var headerGlide = new Glide('#glide-header', {
       perView: 1,
