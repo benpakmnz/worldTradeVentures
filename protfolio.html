@@ -9,15 +9,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type = "text/css" href="styles/normalize.css"/>
     <link rel="stylesheet" type = "text/css" href="styles/styles.css"/>
-    <title>about</title>
+    <title>portfolio</title>
 
 </head>
 <body>
     <div id="sidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html" onclick="closeNav()">home</a>
-        <a href="about.html" class="link-selected" onclick="closeNav()">about</a>
-        <a href="protfolio.html" onclick="closeNav()">portfolio</a>
+        <a href="about.html" onclick="closeNav()">about</a>
+        <a href="protfolio.html" class="link-selected" onclick="closeNav()">portfolio</a>
         <a href="news.html" onclick="closeNav()">news</a>
         <a href="contact.html" onclick="closeNav()">contact</a>
       </div>
@@ -26,8 +26,8 @@
         <!-- <a href="tel: 212-739-7890">(646) 326-1975</a> -->
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="link-selected">ABOUT US</a></li>
-            <li><a href="protfolio.html">portfolio</a></li>
+            <li><a href="about.html" >ABOUT US</a></li>
+            <li><a href="protfolio.html" class="link-selected">portfolio</a></li>
             <li><a href="news.html">news</a></li>
             <li><a href="contact.html">contact us</a></li>
         </ul>
@@ -51,22 +51,24 @@
             </div>
     </header>
     
-    <section id="about" class="inner">
-        <h2 class="section-title">ABOUT <span class="trade-green">US</span></h2>
-        <div id="glide-about">
+    <section id="portfolio" class="inner">
+        <h2 class="section-title">PORTFOLIO</h2>
+        <div id="glide-portfolio">
             <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides about"></ul>
+              <ul class="glide__slides portfolio">
+              </ul>
             </div>
-
-            <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-                    <img src="./images/icons/arrow-left-black.svg">
+            <div class="glide__arrows portfolio_arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--right" data-glide-dir="<">
+                    <img src="./images/icons/arrow-right.svg">
                 </button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-                    <img src="./images/icons/arrow-right-black.svg">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir=">">
+                    <img src="./images/icons/arrow-left.svg">
                 </button>
               </div>
-        </div>
+          </div>
+          
+        <div class="companies-desc"><ul></ul></div>
     </section>
        <footer id="footer">
         <h2 class="section-title">GET <span class="trade-green">IN TOUCH</span></h2>

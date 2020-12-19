@@ -9,16 +9,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type = "text/css" href="styles/normalize.css"/>
     <link rel="stylesheet" type = "text/css" href="styles/styles.css"/>
-    <title>about</title>
+    <title>news</title>
 
 </head>
 <body>
     <div id="sidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html" onclick="closeNav()">home</a>
-        <a href="about.html" class="link-selected" onclick="closeNav()">about</a>
+        <a href="about.html" onclick="closeNav()">about</a>
         <a href="protfolio.html" onclick="closeNav()">portfolio</a>
-        <a href="news.html" onclick="closeNav()">news</a>
+        <a href="news.html"  class="link-selected"onclick="closeNav()">news</a>
         <a href="contact.html" onclick="closeNav()">contact</a>
       </div>
       <div id="popShadow"></div>
@@ -26,9 +26,9 @@
         <!-- <a href="tel: 212-739-7890">(646) 326-1975</a> -->
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="link-selected">ABOUT US</a></li>
+            <li><a href="about.html" >ABOUT US</a></li>
             <li><a href="protfolio.html">portfolio</a></li>
-            <li><a href="news.html">news</a></li>
+            <li><a href="news.html" class="link-selected">news</a></li>
             <li><a href="contact.html">contact us</a></li>
         </ul>
     </nav>
@@ -51,21 +51,50 @@
             </div>
     </header>
     
-    <section id="about" class="inner">
-        <h2 class="section-title">ABOUT <span class="trade-green">US</span></h2>
-        <div id="glide-about">
-            <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides about"></ul>
+    <section id="news" class="inner">
+        <h2 class="section-title trade-green">NEWS</h2>
+        <div class="news-wraper">
+            <div id="glide-news">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides news"></ul>
+                </div>
+    
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <img src="./images/icons/arrow-left-black.svg">
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <img src="./images/icons/arrow-right-black.svg">
+                    </button>
+                  </div>
             </div>
 
-            <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-                    <img src="./images/icons/arrow-left-black.svg">
-                </button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-                    <img src="./images/icons/arrow-right-black.svg">
-                </button>
-              </div>
+
+            <!-- <div class="news-item blog">
+                <img src="images/43.png" class="item-background">
+                <div class="item-content">
+                    <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN</h4>
+                    <p>For thr third time since December 2017, we at App Growth Awards</p>
+                </div>
+                <div class="item-info">
+                    <span>4 April 2019 by Craig Davidos</span>
+                    <span>READ MORE</span>
+                </div>
+
+            </div>
+            <div class="news-item blog">
+                <img src="images/44.png" class="item-background">
+                <div class="item-content">
+                    <h4>This INFLUENCER MARKETING CHANNEL IS SURPRISIN</h4>
+                    <p>For thr third time since December 2017, we at App Growth Awards</p>
+                </div>
+                <div class="item-info">
+                    <span>4 April 2019 by Craig Davidos</span>
+                    <span>READ MORE</span>
+                </div>
+
+            </div> -->
+        
         </div>
     </section>
        <footer id="footer">

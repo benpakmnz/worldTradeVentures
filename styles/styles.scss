@@ -616,6 +616,12 @@ section {
 
 
 #portfolio{
+
+    &.inner{
+        margin: 0 auto 70px ; 
+     }
+
+
     &::before {
         content: 'PORTFOLIO';
         top: 65px;
@@ -839,6 +845,11 @@ section {
 }
 
 #news{   
+
+    &.inner{
+        margin: 0 auto 70px ; 
+     }
+
     .news-wraper {
         width: 90%;
         margin: auto;
@@ -1055,6 +1066,11 @@ footer {
     @media (max-width: 425px){
         padding-top: 15px;
     }
+
+
+    &.inner{
+        margin: 0 auto 70px ; 
+     }
 
     .section-title{
         color: white;

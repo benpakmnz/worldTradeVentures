@@ -681,6 +681,10 @@ section:first-of-type {
   }
 }
 
+#portfolio.inner {
+  margin: 0 auto 70px;
+}
+
 #portfolio::before {
   content: 'PORTFOLIO';
   top: 65px;
@@ -932,6 +936,10 @@ section:first-of-type {
   opacity: 1;
 }
 
+#news.inner {
+  margin: 0 auto 70px;
+}
+
 #news .news-wraper {
   width: 90%;
   margin: auto;
@@ -1174,6 +1182,10 @@ footer {
   footer {
     padding-top: 15px;
   }
+}
+
+footer.inner {
+  margin: 0 auto 70px;
 }
 
 footer .section-title {

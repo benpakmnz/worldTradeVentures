@@ -1,4 +1,4 @@
-var isMobile = false; //initiate as false
+var isMobile = false;
 
   // device detection
   if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
@@ -7,7 +7,6 @@ var isMobile = false; //initiate as false
   }
 
   $( document ).ready(function(){
-
     $('#site-logo').click(function(){
       window.location.href='index.html';})
     $('#site-logo-mobile').click(function(){
@@ -126,27 +125,14 @@ var isMobile = false; //initiate as false
 })
 
 if(isMobile){
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
-  });
-}
-
-  
-
-
-if(isMobile){
   companies.forEach((el,index)=> {
-    
     var comp = $(`<li id="comp-${index}">
                     <div class="comp-item">
                       <img src="images/logos/${el.logo}"/>
                     </div>
                 </li>`)
-            comp.find(".comp-item").on('click', () => tooltipPopupHandler(el));
-            $(comp).appendTo(".companies-desc ul")
+    comp.find(".comp-item").on('click', function(){tooltipPopupHandler(el)});
+    $(comp).appendTo(".companies-desc ul");
 })
 
 }else{
@@ -154,11 +140,11 @@ if(isMobile){
     var comp = `<li >
                 <a href="${el.link}" class="comp-item" target="_blank"><img src="images/logos/${el.logo}"/>
                 <div class="tooltiptext">
-                        <h3>${el.name}</h3>
-                        <p>${el.description}</p> 
+                    <h3>${el.name}</h3>
+                    <p>${el.description}</p> 
                 </div>
             </a></li>`
-            $(comp).appendTo(".companies-desc ul")
+    $(comp).appendTo(".companies-desc ul")
   })
 }
 
@@ -179,7 +165,6 @@ setTimeout(function(){
   popShadowHandler("block");
 }, 1)
 }
-
 
 Object.defineProperty(Array.prototype, 'chunk_inefficient', {
   value: function(chunkSize) {
@@ -207,7 +192,6 @@ var offset_width = screen_width - el_pos
     $(this).find('.tooltiptext').removeClass('right');
   }
   });
-
 
   function openNav() {
     document.getElementById("sidenav").style.width = "250px";
