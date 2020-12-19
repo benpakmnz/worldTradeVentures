@@ -125,12 +125,14 @@ var isMobile = false; //initiate as false
     $("#glide-portfolio").length> 0?portfolioGlide.mount():null;
 })
 
+if(isMobile){
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
   });
+}
 
   
 
