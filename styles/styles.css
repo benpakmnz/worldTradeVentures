@@ -1313,6 +1313,7 @@ footer .footer-content form textarea {
 
 footer .footer-content form input[type="submit"] {
   margin-top: 20px;
+  cursor: pointer;
 }
 
 @media (max-width: 425px) {

@@ -1165,6 +1165,7 @@ footer {
 
             input[type="submit"] {
                 margin-top: 20px;
+                cursor: pointer;
                 
                 @media (max-width: 425px){
                     margin-top: 20px;
