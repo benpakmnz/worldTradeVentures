@@ -35,7 +35,7 @@ const companies=  [
             "link": "https://www.aquant.io/",
             "logo": "aquant.png",
             "name": "Aquant",
-            "slidePic": "aquant.png",
+            "slidePic": "aquant.jpg",
             "description": "Aquant is an enterprise AI platform that uses machine learning to learn your enterprise's unique language and use it to maximize equipment uptime."
         },
         {
@@ -60,21 +60,21 @@ const companies=  [
         "link":"https://www.semperis.com/", 
         "logo":"semperis.png",
         "name": "Semperis",
-        "slidePic": "semperis.png",
+        "slidePic": "semperis.jpg",
         "description": "Semperis is an enterprise identity protection company that enables organizations to quickly recover from accidental or malicious changes and disasters that compromise Active Directory, on-premises and on cloud."
         },
         {
         "link":"https://firedome.io/", 
         "logo":"firedome.png",
         "name": "Firedome",
-        "slidePic": "firedome.png",
+        "slidePic": "firedome.jpg",
         "description": "Firedome secures and supports IoT connected devices and prevent next cyber-catastrophe. Firedome offers products and services that support different needs from active cyber-protection to analytics, insights, and cyber-security fleet management."
         },
         {
         "link":"https://sqream.com/", 
         "logo":"sqream.png",
         "name": "SQream",
-        "slidePic": "sqream.png",
+        "slidePic": "sqream.jpg",
         "description": "SQream delivers the most flexible database for huge dataset analytics. Global enterprises use SQream DB to analyze more data than ever before. "
         },
         {
@@ -118,6 +118,12 @@ const companies=  [
         "logo": "woodspoon-logo.svg",
         "name": "woodspoon",
         "description":"WoodSpoon is a community-based marketplace that facilitates the delivery of homemade food from local chefs.At WoodSpoon we empower our home chefs to share their culture and passion with others. Customers can order for immediate delivery or schedule ahead on WoodSpoon’s mobile app."
+        },
+        {
+        "link": "http://www.eatwoodspoon.com/",
+        "logo": "trackerDetect.svg",
+        "name": "Tracker Detect",
+        "description":"WoodSpoon is a community-based marketplace that facilitates the delivery of homemade food from local chefs.At WoodSpoon we empower our home chefs to share their culture and passion with others. Customers can order for immediate delivery or schedule ahead on WoodSpoon’s mobile app."
         }
 
 
@@ -147,7 +153,7 @@ const articles= [
     },
 
     {
-        "img":"images/37.png",
+        "img":"images/37.jpg",
         "size": "md",
         "background": "dark"
     },
@@ -170,7 +176,7 @@ const articles= [
         "link":"https://www.businesswire.com/news/home/20200402005173/en/Semperis-Named-Gold-Winner-2020-Edison-Awards",
         "size": "md",
         "background": "dark",
-        "img": "images/39.png"
+        "img": "images/39.jpg"
     },
 
     {
@@ -194,7 +200,7 @@ const articles= [
     },
 
     {
-        "img":"images/38.png",
+        "img":"images/38.jpg",
         "size": "md",
         "background": "dark"
     },
@@ -210,7 +216,7 @@ const articles= [
     },
 
     {
-        "img":"images/40.png",
+        "img":"images/40.jpg",
         "size": "md",
         "background": "dark"
     },
@@ -226,7 +232,7 @@ const articles= [
     },
 
     {
-        "img":"images/42.png",
+        "img":"images/42.jpg",
         "size": "md",
         "background": "dark"
     },
@@ -252,13 +258,13 @@ const articles= [
     },
 
     {
-        "img":"images/37.png",
+        "img":"images/37.jpg",
         "size": "md",
         "background": "dark"
     },
     
     {
-        "img":"images/38.png",
+        "img":"images/38.jpg",
         "size": "md",
         "background": "dark"
     },
@@ -279,7 +285,7 @@ const articles= [
         "link":"https://www.insightpartners.com/about-us/news-press/aquant-raises-30-million-in-series-b-led-by-insight-partners-to-close-the-skills-gap-in-service-with-ai/",
         "size": "md",
         "background": "dark",
-        "img": "images/39.png"
+        "img": "images/39.jpg"
     },
 
     {

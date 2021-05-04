@@ -477,7 +477,7 @@ header .header-right .glide .slide-action img {
 }
 
 header .header-right .glide .slide-1 {
-  background-image: url("../images/slide-1.png");
+  background-image: url("../images/slide-1.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -718,6 +718,12 @@ section:first-of-type {
   padding: 91px 0;
 }
 
+@media only screen and (max-width: 1440px) {
+  #portfolio .companies-desc {
+    padding: 40px 0;
+  }
+}
+
 @media only screen and (max-width: 1025px) {
   #portfolio .companies-desc {
     padding: 15px 0 25px;
@@ -729,7 +735,7 @@ section:first-of-type {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  max-width: 1570px;
+  max-width: 1490px;
   padding: 0;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -739,7 +745,7 @@ section:first-of-type {
 
 @media only screen and (max-width: 1440px) {
   #portfolio .companies-desc ul {
-    max-width: 1140px;
+    max-width: 860px;
   }
 }
 
@@ -782,7 +788,7 @@ section:first-of-type {
   padding: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0 10px;
+  margin: 0 8px;
   position: relative;
   display: inline-block;
   width: 100%;
@@ -808,7 +814,7 @@ section:first-of-type {
 }
 
 #portfolio .companies-desc ul li .comp-item img {
-  max-width: 200px;
+  max-width: 160px;
   max-height: 50px;
   vertical-align: middle;
 }
